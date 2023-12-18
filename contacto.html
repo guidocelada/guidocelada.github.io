@@ -20,7 +20,7 @@
     <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <!-- end scripts -->
 
-    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 14:00hs." />
+    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 13:00hs." />
 
     <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
@@ -202,115 +202,11 @@
                             <address>
                                 De Lunes a Viernes:<br>
                                 <span><b>Extracciones</b>: 07:00 - 10:00hs</span><br>
-                                <span><b>Entrega de resultados</b>: 10:00 - 14:00hs</span>
+                                <span><b>Entrega de resultados</b>: 10:00 - 13:00hs</span>
                                 Sabados cerrado
                             </address>
                         </blockquote>
                     </div>
-
-                    <div class="col-12">
-                        <h4>Consultas?</h4>
-                        <p>Envíenos su consulta y le responderemos a su email</p>
-                        <div class="row">
-                            <form>
-                                <style>
-                                    .error {
-                                        color: red;
-                                    }
-                                </style>
-                                <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-
-                                {{#if error}}
-                                <ul class="errors">
-                                    {{#each errormessages}}
-                                    <div class="notification danger">
-                                        <p>{{ message }}</p>
-                                    </div>
-                                    {{/each}}
-                                </ul>
-                                {{/if}}
-                                {{#if success}}
-                                <ul class="success">
-                                    <div class="notification success">
-                                        <p>Su mensaje ha sido enviado correctamente. Gracias!</p>
-                                    </div>
-                                </ul>
-                                {{/if}}
-                                <p class="col-18">
-                                    <label for="nombre">Nombre:</label><span class="required"
-                                                                             aria-required="true">*</span><br>
-
-                                    <input placeholder="Ingrese su nombre completo..." size="100" name="nombre"
-                                           type="text" id="nombre">
-                                </p>
-                                <p class="col-18">
-                                    <label for="email">E-mail:</label>
-                                    <i>(responderemos a este email): </i> <span class="required"
-                                                                                aria-required="true">*</span><br>
-
-                                    <input placeholder="Ingrese su dirección de e-mail..." size="100" name="email"
-                                           type="email" id="email">
-                                </p>
-
-                                <p class="col-1">
-                                    <label for="mensaje">Consulta:</label>
-                                    <span class="required" aria-required="true">*</span><br>
-
-                                    <textarea placeholder="Escriba su consulta aquí..." cols="100" rows="11"
-                                              name="mensaje" id="mensaje"></textarea>
-                                </p>
-
-                                <p class="col-1" style="margin-bottom: 0">
-                                    <input class="button primary" type="submit" value="Enviar Consulta">
-                                </p>
-
-                                <script>
-
-                                    $("form").validate({
-                                        debug: true,
-                                        // Specify the validation rules
-                                        rules: {
-                                            nombre: "required",
-                                            mensaje: "required",
-                                            email: {
-                                                required: true,
-                                                email: true
-                                            }
-                                        },
-
-                                        // Specify the validation error messages
-                                        messages: {
-                                            nombre: "Debe ingresar su nombre",
-                                            email: {
-                                                required: "Debe ingresar su email al cual le responderemos",
-                                                email: "Ingrese un email válido"
-                                            },
-                                            mensaje: "Debe redactar su consulta"
-                                        },
-
-                                        submitHandler: function (form) {
-                                            $('input[type="submit"]').attr("disabled", true);
-                                            var txt = $('input[type="submit"]').val();
-                                            $('input[type="submit"]').val("Enviando...");
-                                            $.post("contacto", $("form").serialize())
-                                                .done(
-                                                    function () {
-                                                        $("form").prepend("<div class='notification success'><span class='close' onclick='$(this).parent().fadeOut()'><i class='fa fa-times'></i></span><p>Su mensaje ha sido enviado correctamente y será respondido a la brevedad. Gracias!</p></div>");
-                                                        $('input[type="submit"]').removeAttr("disabled");
-                                                        $('input[type="submit"]').val(txt);
-                                                    }
-                                                ).fail(function() {
-                                                $("form").prepend("<div class='notification danger'><span class='close' onclick='$(this).parent().fadeOut()'><i class='fa fa-times'></i></span><p>Hubo un problema al enviar el mensaje, lo sentimos. Pruebe enviar la consulta desde su email a celadalab@gmail.com</p></div>");
-                                                $('input[type="submit"]').val("Error");
-                                            });
-                                        }
-                                    });
-                                </script>
-
-                            </form>
-                        </div>
-                    </div>
-                    </blockquote>
                 </div>
             </div>
             <!-- end section content -->

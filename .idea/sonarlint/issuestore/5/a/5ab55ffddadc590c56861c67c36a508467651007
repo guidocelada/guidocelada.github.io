@@ -1,0 +1,21 @@
+
+Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+^php:S101"KRename class "ezTweet" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(‚ù¢
+V	php:S1142N"<This method has 6 returns, which is more than the 3 allowed.(…Ö·‡şÿÿÿÿ
+8	php:S1780´"Remove this closing tag "?>".(Ö‘äÏúÿÿÿÿ
+jphp:S116"VRename this field "$consumer_key" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¥¨“œ
+lphp:S116"YRename this field "$consumer_secret" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(æÄÉ
+
+hphp:S116!"TRename this field "$user_token" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(Îºøê
+nphp:S116$"URename this field "$user_secret" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(Â´œØúÿÿÿÿ
+kphp:S116*"WRename this field "$cache_enabled" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(şÇû
+kphp:S116-"XRename this field "$cache_interval" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(÷ÜºM
+gphp:S1160"SRename this field "$cache_dir" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(´©Ëˆ
+rphp:S117P"YRename this local variable "$CFID" to match the regular expression ^[a-z_][a-zA-Z0-9_]*$.(÷ô‡ñúÿÿÿÿ
+uphp:S117W"\Rename this local variable "$JSONraw" to match the regular expression ^[a-z_][a-zA-Z0-9_]*$.(ö×Ÿüÿÿÿÿ
+rphp:S117X"YRename this local variable "$JSON" to match the regular expression ^[a-z_][a-zA-Z0-9_]*$.(»™éßùÿÿÿÿ
+n	php:S3776N"TRefactor this function to reduce its Cognitive Complexity from 42 to the 15 allowed.(…Ö·‡şÿÿÿÿ
+<	php:S2003"&Replace "require" with "require_once".(€¸éØ
+A	php:S2003"&Replace "require" with "require_once".(ÉÍæ¨üÿÿÿÿ
+b	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(€¸éØ
+g	php:S4833"LReplace "require" with namespace import mechanism through the "use" keyword.(ÉÍæ¨üÿÿÿÿ

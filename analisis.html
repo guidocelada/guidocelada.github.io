@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Celada - Laboratorio de Análisis Clinicos en La Plata</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <!-- start stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/public/css/core.css">
+    <!-- end stylesheets -->
+
+    <!-- start scripts -->
+    <script type="text/javascript" src="/public/src/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/public/src/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- end scripts -->
+
+    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 14:00hs." />
+
+    <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        a.button.blue.big{
+            cursor: default;
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+<!-- start header -->
+<header id="site-header" class="header section light">
+
+    <!-- start container -->
+    <div class="container">
+
+        <!-- start row -->
+        <div class="row">
+
+            <!-- start logo -->
+            <div id="logo" class="col-29">
+                <h1 class="site-title"><a href="/"><img src="/public/img/logo-dark.png" alt="Laboratorio Celada"></a></h1>
+            </div>
+            <!-- end logo -->
+
+            <!-- start header widgets -->
+            <div id="header-widgets" class="col-7">
+
+
+                <!-- start site nav -->
+                <nav id="site-nav" class="nav horizontal text-right">
+                    <ul class="dropdown">
+                        <li><a href="/">Inicio</a></li>
+
+                        <li><a href="empresa">Empresa</a>
+                            <ul>
+                                <li><a href="empresa" >Misión / Visión</a></li>
+                                <li><a href="empresa#calidad">Calidad</a></li>
+                                <li><a href="empresa#acreditacion">Acreditacion</a></li>
+                                <li><a href="empresa#personal">Personal</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pacientes">Pacientes</a>
+                            <ul>
+                                <!-- <li><a href="resultados-online">Resultados online</a></li> -->
+                                <li><a href="analisis">Requisitos para análisis</a></li>
+                                <li><a href="obras-sociales">Obras sociales</a></li>
+                                <li><a href="faq">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="medicos">Medicos</a>
+                            <ul>
+                                <li><a href="menu-prestacional">Menu prestacional</a></li>
+                                <li><a href="valores-referencia">Valores de referencia</a></li>
+                                <li><a href="ingreso-medicos">Ingreso médicos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotos">Fotos</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- end site nav -->
+
+            </div>
+            <!-- end header widgets -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- end container -->
+</header>
+<!-- end header -->
+
+
+
+
+<!-- start main -->
+<main id="main">
+
+    <!-- start page title section -->
+    <section class="page-title section light parallax section-bg-1" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="icon circle primary big"><i class="fa fa-user"></i></div>
+                    <!-- start page title -->
+                    <header class="section-header content-header">
+                        <h1 class="title">Pacientes / Requisitos para análisis</h1>
+                        <p class="subtitle lead">Información para llegar preparado al laboratorio, clasificada por prueba a realizarse</p>
+                    </header>
+                    <!-- end page title -->
+
+                </div>
+
+                <div class="col-27">
+                    <!-- an empty space, you can add image or additional text here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title section -->
+
+    <!-- start main content -->
+    <section id="main-content" class="section light">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content row">
+
+                <div class="row">
+                    <div class="col-5" id="requisitos">
+                        <header class="content-header v3">
+                            <h3>Requisitos por pruebas</h3>
+                        </header>
+                        <div class="tabs vertical row">
+                            <nav class="tabnav nav col-27">
+                                <ul>
+                                    <li class="active"><a href="#analisis" class="active">Análisis de Sangre</a></li>
+                                    <li class=""><a href="#hormonas">Análisis Hormonales</a></li>
+                                    <li class=""><a href="#OC">Orina Completa</a></li>
+                                    <li class=""><a href="#cultivos">Urocultivos</a></li>
+                                    <li class=""><a href="#OX">Orina de 12 o 24hs</a></li>
+                                    <li class=""><a href="#PTOG">Prueba de Tolerancia a la Glucosa</a></li>
+                                    <li class=""><a href="#GPP">Glucosa Post Prandial</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="tab col-9" style="display: block;" id="analisis">
+                                <h2>Análisis de Sangre</h2>
+
+                                <p class="lead">Deberá concurrir al laboratorio con 8 horas de ayuno.</p>
+                                <p class="lead">El ayuno deberá ser de 12 horas sólo si le solicitan alguna de las siguientes pruebas:
+                                <ul>
+                                    <li>Perfil Lipoproteico</li>
+                                    <li>Colesterol HDL y LDL</li>
+                                    <li>Trigliceridos</li>
+                                </ul>
+                                </p>
+
+                                <p>Recuerde: El ayuno es <b>no comer ni tomar nada</b> (sólo agua) durante el periodo de tiempo indicado hasta el análisis (8 horas).</p>
+                                <p>Luego de la extracción de sangre le recomendamos llevar el brazo doblado hacia el pecho durante 15 minutos, no realizar ejercicios físicos, ni hacer ningún tipo de fuerza con el brazo.</p>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="hormonas">
+                                <h2>Análisis Hormonales</h2>
+
+                                <p class="lead">
+                                    Debe concurrir a nuestro Laboratorio con 8 horas de ayuno (o 12 hs si le solicitan además perfil lipídico).
+                                <ul>
+                                    <li>Hormonas Tiroideas: Si usted está en tratamiento, <b>no debe tomar ni Levotiroxina ni Danantizol</b> el día de la extracción.</li>
+                                    <li>Hormonas Femeninas: Debe indicar en el dia de su análisis, la fecha de su ultima menstruación (FUM).</li>
+                                </ul>
+                                </p>
+
+                                <p>Luego de la extracción de sangre le recomendamos llevar el brazo doblado hacia el pecho durante 15 minutos, no realizar ejercicios físicos, ni hacer ningún tipo de fuerza con el brazo.</p>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="OC">
+                                <h2>Orina Completa</h2>
+
+                                <p class="lead">
+                                    Debe juntar la primera orina de la mañana en un envase limpio y seco, asegurarse que el cierre sea hermetico. La orina debe tener indicado su Nombre y Apellido con letra imprenta.
+                                </p>
+                                <p class="lead">
+                                    En el caso que Ud. se levante durante la noche varias veces a orinar, debe juntar UNA UNICA ORINA con la mayor retención posible.<br/>
+                                    Si el dia de la extracción no trae la orina al Laboratorio, podrá traerla al dia siguiente en el horario de 07:00 a 12hs.
+                                </p>
+
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="cultivos">
+                                <h2>Urocultivos</h2>
+
+                                <p class="lead">
+                                    Al menos siete (7) días antes de la toma de la muestra, <b>no debe tomar antibióticos</b>.
+                                </p>
+                                <p class="lead">
+                                    Recoger la primera orina de la mañana (u otra orina con una retención mínima de 3 horas) del siguiente modo:
+                                <ul>
+                                    <li>Higienizar genitales externos con agua y un jabón recién abierto, enjuagar bien y secar con una toalla limpia y recién planchada.
+                                    <li>Mujeres: Hacer taponamiento vaginal, con tapón de algodón o tampones (si esta embarazada, debe consultar con su medico si puede usar tampones).</li>
+                                    <li>Comenzar a orinar, eliminar el primer chorro de orina, recoger solamente el chorro medio en el recipiente estéril y eliminar la última porción de orina. Cerrar el recipiente.</li>
+                                    <li>Conservar en heladera hasta el momento de llevarlo al laboratorio.</li>
+                                    <li>Mujeres: Luego de juntar la orina, sacarse el tapón vaginal y desecharlo.</li>
+                                    <li>Por favor traer impreso y completo el siguiente formulario: <a href="/assets/pdf/Urocultivo.pdf">Formulario Urocultivo</a></li>
+                                </ul>
+                                Tenga en cuenta que si no sigue estas instrucciones, puede dar lugar a orinas contaminadas, con lo cual debería juntar una nueva muestra y retrasaría el resultado.
+
+                                </p>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="OX">
+                                <h2>Ejemplo de Orina de 24hs</h2>
+                                <p class="lead">
+                                    Comenzar a orinar a las 07:00am, desechar esta orina. Luego, recolectar <b>todo el volumen</b> de <b>todas las orinas siguientes</b>, inclusive la de las 07:00am del día siguiente.<br/s>
+                                    Mantener en heladera durante el periodo de recolección y remitir al Laboratorio en el horario de 07:00 a 12 hs.
+                                </p>
+
+                                <h2>Ejemplo de Orina de 12hs</h2>
+                                <p class="lead">
+                                    Comenzar a orinar a las 19:00hs, desechar esta orina. Luego, recolectar <b>todo el volumen</b> de <b>todas las orinas siguientes</b>, inclusive la de las 07:00am del día siguiente.<br/>
+                                    Mantener en heladera durante el periodo de recolección y remitir al Laboratorio en el horario de 07:00 a 12 hs.
+                                </p>
+                                <p>
+                                    Tenga en cuenta que si no sigue estas instrucciones, los resultados se verán afectados, de modo que deberia juntar una nueva muestra.
+                                </p>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="PTOG">
+                                <h2>PTOG: Prueba de Tolerancia a la Glucosa</h2>
+
+                                <p class="lead">Deberá concurrir al laboratorio con un ayuno de 8 horas. </p>
+                                <p class="lead">Se realiza una extracción, luego deberá tomar en 15 minutos una solución de glucosa con limón provista por el bioquímico. Se realiza otra extracción a las 2 horas de haber tomado la solución. </p>
+                                <p class="lead"> Durante la entera duración de la prueba deberá permanecer en reposo.</p>
+
+                                <p>Recuerde: El ayuno es <b>no comer ni tomar nada</b> (sólo agua) durante el periodo de tiempo indicado hasta el análisis (8 horas).</p>
+                                <p>El reposo durante la entera duración de la prueba es importante ya que de otra manera se verían afectados los resultados finales.</p>
+                                <p>Luego de la extracción de sangre le recomendamos llevar el brazo doblado hacia el pecho durante 15 minutos, no realizar ejercicios físicos, ni hacer ningún tipo de fuerza con el brazo.</p>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="GPP">
+                                <h2>Glucosa Post Prandial</h2>
+
+                                <p class="lead">Deberá concurrir al laboratorio con un ayuno de 8 horas. </p>
+                                <p class="lead"> Se realiza una extracción, luego se le indica un desayuno libre de dietéticos (ej: infusión azucarada más algo dulce). Se realiza otra extracción a las 2 horas de haber desayunado. </p>
+                                <p class="lead"> Durante la prueba deberá permanecer en reposo.</p>
+
+                                <p>Recuerde: El ayuno es <b>no comer ni tomar nada</b> (sólo agua) durante el periodo de tiempo indicado hasta el análisis (8 horas).</p>
+                                <p>El reposo durante la entera duración de la prueba es importante ya que de otra manera se verían afectados los resultados finales.</p>
+                                <p>Luego de la extracción de sangre le recomendamos llevar el brazo doblado hacia el pecho durante 15 minutos, no realizar ejercicios físicos, ni hacer ningún tipo de fuerza con el brazo</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end section content -->
+
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end main content -->
+
+</main>
+<!-- end main -->
+
+
+
+
+
+
+
+
+
+
+<!-- start footer -->
+<footer id="site-footer">
+
+
+    <!-- start footer bottom -->
+    <section id="footer-bottom" class="section section-bg-1 dark" data-overlay="#202020" data-overlay-opacity="0.8" data-pattern="dot" data-pattern-opacity="0.9">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start row -->
+            <div class="row">
+
+                <address>
+                    <div class="col-24">
+                        <a href="https://goo.gl/maps/hxAK8"><span class="icon small"><img src="/public/img/location.png" alt="Tel" /></span> <span>Avenida 51 Nº1746 (Casi Esquina 30).</span><br><span style="margin-left:30px">La Plata, Bs As, Argentina</span></a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="tel:+542214519943"><span class="icon small"><img src="/public/img/telephone.png" alt="Tel" /></span> (0221) 451 9943</a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="mailto:celadalab@gmail.com"><span class="icon small"><img src="/public/img/email.png" alt="Email" /></span>celadalab@gmail.com</a>
+                    </div>
+                </address>
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end footer bottom -->
+
+</footer>
+<!-- end footer -->
+
+<!-- place scripts at the end of body for better performance -->
+<script type="text/javascript" src="/public/src/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/public/src/hoverdir/jquery.hoverdir.min.js"></script>
+<script type="text/javascript" src="/public/src/slicknav/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="/public/src/appear/jquery.appear.js"></script>
+<script type="text/javascript" src="/public/src/countup/countUp.min.js"></script>
+<script type="text/javascript" src="/public/src/twitter/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/public/src/easypiechart/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="/public/src/sticky/jquery.sticky.js"></script>
+<script type="text/javascript" src="/public/src/tooltipster/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="/public/src/swipebox/jquery.swipebox.min.js"></script>
+
+<script type="text/javascript" src="/public/js/casanova.menu.js"></script>
+<script type="text/javascript" src="/public/js/casanova.accordion.js"></script>
+<script type="text/javascript" src="/public/js/casanova.tabs.js"></script>
+<script type="text/javascript" src="/public/js/casanova.fitmedia.js"></script>
+<script type="text/javascript" src="/public/js/casanova.min.js"></script>
+<script type="text/javascript" src="/public/js/init.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54923911-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

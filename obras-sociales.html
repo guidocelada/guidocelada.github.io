@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Celada - Laboratorio de Análisis Clinicos en La Plata</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <!-- start stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/public/css/core.css">
+    <!-- end stylesheets -->
+
+    <!-- start scripts -->
+    <script type="text/javascript" src="/public/src/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/public/src/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- end scripts -->
+
+    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 14:00hs." />
+
+    <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        a.button.blue.big{
+            cursor: default;
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+<!-- start header -->
+<header id="site-header" class="header section light">
+
+    <!-- start container -->
+    <div class="container">
+
+        <!-- start row -->
+        <div class="row">
+
+            <!-- start logo -->
+            <div id="logo" class="col-29">
+                <h1 class="site-title"><a href="/"><img src="/public/img/logo-dark.png" alt="Laboratorio Celada"></a></h1>
+            </div>
+            <!-- end logo -->
+
+            <!-- start header widgets -->
+            <div id="header-widgets" class="col-7">
+
+
+                <!-- start site nav -->
+                <nav id="site-nav" class="nav horizontal text-right">
+                    <ul class="dropdown">
+                        <li><a href="/">Inicio</a></li>
+
+                        <li><a href="empresa">Empresa</a>
+                            <ul>
+                                <li><a href="empresa" >Misión / Visión</a></li>
+                                <li><a href="empresa#calidad">Calidad</a></li>
+                                <li><a href="empresa#acreditacion">Acreditacion</a></li>
+                                <li><a href="empresa#personal">Personal</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pacientes">Pacientes</a>
+                            <ul>
+                                <!-- <li><a href="resultados-online">Resultados online</a></li> -->
+                                <li><a href="analisis">Requisitos para análisis</a></li>
+                                <li><a href="obras-sociales">Obras sociales</a></li>
+                                <li><a href="faq">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="medicos">Medicos</a>
+                            <ul>
+                                <li><a href="menu-prestacional">Menu prestacional</a></li>
+                                <li><a href="valores-referencia">Valores de referencia</a></li>
+                                <li><a href="ingreso-medicos">Ingreso médicos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotos">Fotos</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- end site nav -->
+
+            </div>
+            <!-- end header widgets -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- end container -->
+</header>
+<!-- end header -->
+
+
+
+
+
+<link rel="stylesheet" href="/css/reveal.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.reveal.js"></script>
+
+<style>
+    .tabs.vertical .tabnav a:after{
+        display: none;
+    }
+    .tabnav a:hover {
+        background-color: #9AD2F7 !important;
+        color: white;
+    }
+    .tabnav .active a {
+        background-color: white !important;
+        color: black !important;
+        border-color: #EFEFEF !important;
+    }
+    #search-input {
+        width: 90%;
+    }
+    .ok-dialog-button {
+        width: 100%;
+    }
+    .navitem {
+        cursor: pointer;
+    }
+</style>
+<script type="text/javascript">
+    jQuery.expr[":"].contains = jQuery.expr.createPseudo(function(arg) {
+        return function( elem ) {
+            return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+        };
+    });
+
+    $(function(){
+        $('#search-input').keyup(function(e){
+            var searchString = $('#search-input').val();
+            if (searchString != "") {
+                var foundLi = $('.navitem:contains("' + searchString + '")');
+                $( ".navitem" ).each(function() {
+                    $( this ).css( "display","none" );
+                });
+                foundLi.css( "display","block" );
+            } else {
+                $( ".navitem" ).each(function() {
+                    $( this ).css( "display","block" );
+                });
+            }
+            e.preventDefault();;
+        });
+
+    });
+</script>
+<script type="text/javascript">
+</script>
+
+
+<!-- start main -->
+<main id="main">
+
+    <!-- start page title section -->
+    <section class="page-title section light parallax section-bg-1" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="icon circle primary big"><i class="fa fa-user"></i></div>
+                    <!-- start page title -->
+                    <header class="section-header content-header">
+                        <h1 class="title">Pacientes / Obras Sociales</h1>
+                        <p class="subtitle lead">Obras Sociales admitidas por el Laboratorio y requisitos de cada una de estas. Seleccione su obra social para ver sus requisitos.</p>
+                    </header>
+                    <!-- end page title -->
+
+                </div>
+
+                <div class="col-27">
+                    <!-- an empty space, you can add image or additional text here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title section -->
+
+    <!-- start main content -->
+    <section id="main-content" class="section light">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content row">
+
+                <div class="row">
+
+                    <div class="col-5" id="mutuales">
+                        <header class="content-header v3">
+                            <h3>Obras Sociales</h3>
+                        </header>
+                        <i class="fa fa-fw fa-search"></i> <input id="search-input" type="search" size="20" placeholder="Buscar...">
+                        <div class="tabs vertical row ">
+                            <nav class="tabnav nav col-4" style="margin-top: 15px">
+                                <ul id="obras-sociales">
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">A</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">ACA SALUD</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">ALIMENTACION-OSPIA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">AMEMOP</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">AMEP</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">AMFFA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">APSOT</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">B</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">BANCO PROVINCIA</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">C</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">CASA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">CLERO (SAN PEDRO)</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">COMEI</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">D</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">DASUTEN</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">E</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">ESCRIBANOS</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">F</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">FATFA</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">G</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">GALENO Interior</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">I</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">Imedical Life</a></li>
+                                    <li><a class="navitem" data-reveal-id="ioma" data-animation="fade">IOMA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">IOMA Convenio Interprovincial</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">IOSE</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">L</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">LABOR</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">LUIS PASTEUR</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">LUZ Y FUERZA</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">M</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">MEDICUS</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">MEDIFE</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">O</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">OMINT</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSAP</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">OSAPM Interior</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">OSDE</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">OSDIPP</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSECAC</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">OSPE</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSPEBA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type4" data-animation="fade">OSPOCE</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSPRERA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSPSA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">OSSEG (Seguros)</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSSIMRA</a></li>
+                                    <li><a class="navitem" data-reveal-id="type3" data-animation="fade">OSTEE</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">P</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">PAMI</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">PODER JUDICIAL</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">POLICIA FEDERAL</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">S</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">SCIS S.A</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">Servesalud</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">SPM Ostel jubilados y pensionados interior</a></li>
+                                    <li><a class="navitem" data-reveal-id="type2" data-animation="fade">SWISS MEDICAL</a></li>
+                                    <li><a class="navitem" style="background-color: #3498DB !important; color: white !important; cursor: default;">U</a></li>
+                                    <li><a class="navitem" data-reveal-id="type1" data-animation="fade">Union personal-Austral Omi</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- end section content -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end main content -->
+
+</main>
+<!-- end main -->
+
+<div id="ioma" class="reveal-modal small">
+    <h1>Indicaciones</h1>
+    <p>
+        Debe concurrir al Laboratorio con:
+    <ul>
+        <li>DNI</li>
+        <li>Carnet de su Obra Social</li>
+        <li>Orden médica (con menos de un mes de la prescripción)</li>
+    </ul>
+    Su orden médica deberá ser autorizada en el Laboratorio Celada.
+    </p>
+    <h2>Autorizaciones</h2>
+    <p>
+        A partir de las 24hs hábiles de haber iniciado el trámite de autorización en nuestro Laboratorio, usted puede consultar el estado de la autorización de su orden con su número de documento en:
+        <a href="http://www.ioma.aol.faba.org.ar/default.asp"> Consulta de autorizaciones</a> <br>
+        Allí puede encontrar 3 opciones:
+    <ul>
+        <li><b style="color:red">"Pendiente de auditoría"</b>: Significa que su orden todavía no fue autorizada. Vuelva a consultar al día siguiente.</li>
+        <li><b style="color:#008000">"Autorización total"</b>: Quiere decir que <b>todas</b> sus prácticas fueron autorizadas. </li>
+        <li><b style="color:red">"Autorización parcial"</b>: Significa que sólo se autorizan algunas prácticas. Llamar al Laboratorio para conocer el costo de las prácticas no autorizadas.</li>
+    </ul>
+    </p>
+    <p>Ante cualquier consulta, consultenos por cualquier medio <a href="/contacto">aquí</a>.</p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="type1" class="reveal-modal small">
+    <h1>Indicaciones</h1>
+    <p>
+        Debe concurrir al Laboratorio con:
+    <ul>
+        <li>DNI</li>
+        <li>Carnet de su Obra Social</li>
+        <li>Orden médica (con menos de un mes de la prescripción)</li>
+    </ul>
+    Su orden médica deberá ser autorizada en el Laboratorio Celada.
+    </p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="type2" class="reveal-modal small">
+    <h1>Indicaciones</h1>
+    <p>
+        Debe concurrir al Laboratorio con:
+    <ul>
+        <li>DNI</li>
+        <li>Carnet de su Obra Social</li>
+        <li>Orden médica (con menos de un mes de la prescripción)</li>
+    </ul>
+    </p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="type3" class="reveal-modal small">
+    <h1>Indicaciones</h1>
+    <p>
+        Debe concurrir al Laboratorio con:
+    <ul>
+        <li>DNI</li>
+        <li>Carnet de su Obra Social</li>
+        <li>Orden médica (con menos de un mes de la prescripción)</li>
+    </ul>
+    <b>Su orden médica deberá ser previamente autorizada en su Obra Social.</b>
+    </p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="type4" class="reveal-modal small">
+    <h1>Indicaciones</h1>
+    <p>
+        Debe concurrir al Laboratorio con:
+    <ul>
+        <li>DNI</li>
+        <li>Carnet de su Obra Social</li>
+        <li>Orden médica (con menos de un mes de la prescripción)</li>
+    </ul>
+    <b>Algunas prácticas requieren la autorización previa en su Obra Social. Por favor consultenos por cualquier medio <a href="/contacto">aquí</a>.</b>
+    </p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- start footer -->
+<footer id="site-footer">
+
+
+    <!-- start footer bottom -->
+    <section id="footer-bottom" class="section section-bg-1 dark" data-overlay="#202020" data-overlay-opacity="0.8" data-pattern="dot" data-pattern-opacity="0.9">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start row -->
+            <div class="row">
+
+                <address>
+                    <div class="col-24">
+                        <a href="https://goo.gl/maps/hxAK8"><span class="icon small"><img src="/public/img/location.png" alt="Tel" /></span> <span>Avenida 51 Nº1746 (Casi Esquina 30).</span><br><span style="margin-left:30px">La Plata, Bs As, Argentina</span></a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="tel:+542214519943"><span class="icon small"><img src="/public/img/telephone.png" alt="Tel" /></span> (0221) 451 9943</a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="mailto:celadalab@gmail.com"><span class="icon small"><img src="/public/img/email.png" alt="Email" /></span>celadalab@gmail.com</a>
+                    </div>
+                </address>
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end footer bottom -->
+
+</footer>
+<!-- end footer -->
+
+<!-- place scripts at the end of body for better performance -->
+<script type="text/javascript" src="/public/src/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/public/src/hoverdir/jquery.hoverdir.min.js"></script>
+<script type="text/javascript" src="/public/src/slicknav/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="/public/src/appear/jquery.appear.js"></script>
+<script type="text/javascript" src="/public/src/countup/countUp.min.js"></script>
+<script type="text/javascript" src="/public/src/twitter/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/public/src/easypiechart/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="/public/src/sticky/jquery.sticky.js"></script>
+<script type="text/javascript" src="/public/src/tooltipster/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="/public/src/swipebox/jquery.swipebox.min.js"></script>
+
+<script type="text/javascript" src="/public/js/casanova.menu.js"></script>
+<script type="text/javascript" src="/public/js/casanova.accordion.js"></script>
+<script type="text/javascript" src="/public/js/casanova.tabs.js"></script>
+<script type="text/javascript" src="/public/js/casanova.fitmedia.js"></script>
+<script type="text/javascript" src="/public/js/casanova.min.js"></script>
+<script type="text/javascript" src="/public/js/init.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54923911-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

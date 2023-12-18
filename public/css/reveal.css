@@ -1,0 +1,145 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 1111;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	.reveal-modal {
+    min-height: 300px;
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 1112;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
+
+
+
+  @media only screen and (max-width: 40em) {
+    .reveal-modal, dialog {
+      /*min-height: 100vh;*/ } }
+  .reveal-modal .column, dialog .column, .reveal-modal .columns, dialog .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child, dialog > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child, dialog > :last-child {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal, dialog {
+      width: 80%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal, dialog {
+      top: 6.25rem; } }
+  .reveal-modal.radius, dialog.radius {
+    border-radius: 3px; }
+  .reveal-modal.round, dialog.round {
+    border-radius: 1000px; }
+  .reveal-modal.collapse, dialog.collapse {
+    padding: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal.tiny, dialog.tiny {
+      width: 30%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal.small, dialog.small {
+      width: 40%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal.medium, dialog.medium {
+      width: 60%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal.large, dialog.large {
+      width: 70%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal.xlarge, dialog.xlarge {
+      width: 95%;
+      max-width: 62.5em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  .reveal-modal.full, dialog.full {
+    top: 0;
+    left: 0;
+    height: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin-left: 0 !important; }
+    @media only screen and (min-width: 40.063em) {
+      .reveal-modal.full, dialog.full {
+        width: 100vw;
+        max-width: 62.5em;
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
+

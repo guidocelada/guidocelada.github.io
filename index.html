@@ -1,9 +1,466 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hola</title>
+    <meta charset="UTF-8">
+    <title>Laboratorio Celada - Laboratorio de Análisis Clinicos en La Plata</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+    <!-- google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <!-- start stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/public/css/core.css">
+    <!-- end stylesheets -->
+
+    <!-- start scripts -->
+    <script type="text/javascript" src="/public/src/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/public/src/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- end scripts -->
+
+    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 14:00hs." />
+
+    <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        a.button.blue.big{
+            cursor: default;
+            font-size: 14px
+        }
+    </style>
 </head>
+
 <body>
-    Hola
+<!-- start header -->
+<header id="site-header" class="header section light">
+
+    <!-- start container -->
+    <div class="container">
+
+        <!-- start row -->
+        <div class="row">
+
+            <!-- start logo -->
+            <div id="logo" class="col-29">
+                <h1 class="site-title"><a href="/"><img src="/public/img/logo-dark.png" alt="Laboratorio Celada"></a></h1>
+            </div>
+            <!-- end logo -->
+
+            <!-- start header widgets -->
+            <div id="header-widgets" class="col-7">
+
+
+                <!-- start site nav -->
+                <nav id="site-nav" class="nav horizontal text-right">
+                    <ul class="dropdown">
+                        <li><a href="/">Inicio</a></li>
+
+                        <li><a href="empresa">Empresa</a>
+                            <ul>
+                                <li><a href="empresa" >Misión / Visión</a></li>
+                                <li><a href="empresa#calidad">Calidad</a></li>
+                                <li><a href="empresa#acreditacion">Acreditacion</a></li>
+                                <li><a href="empresa#personal">Personal</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pacientes">Pacientes</a>
+                            <ul>
+                                <!-- <li><a href="resultados-online">Resultados online</a></li> -->
+                                <li><a href="analisis">Requisitos para análisis</a></li>
+                                <li><a href="obras-sociales">Obras sociales</a></li>
+                                <li><a href="faq">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="medicos">Medicos</a>
+                            <ul>
+                                <li><a href="menu-prestacional">Menu prestacional</a></li>
+                                <li><a href="valores-referencia">Valores de referencia</a></li>
+                                <li><a href="ingreso-medicos">Ingreso médicos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotos">Fotos</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- end site nav -->
+
+            </div>
+            <!-- end header widgets -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- end container -->
+</header>
+<!-- end header -->
+
+<main id="main">
+
+    <section id="banner" class="tp-banner-container section ">
+
+        <div class="tp-banner" style="visibility: hidden">
+            <ul>
+                <!-- slide one -->
+                <li data-transition="fade" data-slotamount="6" data-masterspeed="1000">
+
+                    <!-- slide bg -->
+                    <img src="/public/assets/images/slide-bg-1.png" alt="slide-bg-1"
+                         data-bgfit="cover"
+                         data-bgposition="left top"
+                         data-bgrepeat="no-repeat">
+
+                    <!-- slide layer 1 -->
+                    <div class="tp-caption fade large-black"
+                         data-x="center"
+                         data-y="155"
+                         data-speed="800"
+                         data-start="500"
+                         data-easing="Back.easeInOut">
+                        Bienvenido a la web del
+                    </div>
+
+                    <!-- slide layer 2 -->
+                    <div class="tp-caption customin customout big-medium-black"
+                         data-x="center"
+                         data-y="200"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="800"
+                         data-start="1000"
+                         data-easing="Back.easeInOut">
+                        <span style=" ">LABORATORIO</span> <span style="color:rgb(0, 121, 255)">CELADA</span>
+                    </div>
+
+                    <!-- slide layer 3 -->
+                    <div class="tp-caption customin customout medium-black"
+                         data-x="center"
+                         data-y="258"
+                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="800"
+                         data-start="1500"
+                         data-easing="Back.easeInOut">
+                        Laboratorio de análisis clínicos
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end rev slider -->
+
+        <!-- initialize slider -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.tp-banner').revolution({
+                    startwidth: 1050,
+                    startheight: 500,
+                    hideThumbs: 10,
+                    fullWidth: 'on',
+                    forceFullWidth: 'on',
+                    videoJsPath:'src/rs-plugin/videojs/'
+                });
+            });
+        </script>
+
+    </section>
+    <!-- end banner -->
+
+
+
+    <!-- start pacientes -->
+    <section id="section-teaser" class="section light " data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content" style="padding-bottom: 0">
+
+                <!-- start row -->
+                <div class="row">
+                    <div class="col-16">
+                        <img src="/public/assets/images/C.png" alt="display">
+                    </div>
+
+                    <div class="col-20">
+                        <div class="clearfix" style="height: 10px;"></div>
+
+                        <h2>Información para los pacientes</h2>
+
+                        <p>Toda la información para los pacientes la puede encontrar aquí</p>
+
+                        <div class="row">
+                            <div class="col-5">
+                                <ul class="unstyled">
+                                    <a href="analisis" class="button medium primary"><i class="fa fw fa-flask"></i> Requisitos para análisis</a>
+                                    <a href="obras-sociales" class="button medium primary" style="padding-right: 82px"><i class="fa fw fa-medkit"></i> Obras Sociales</a>
+                                    <a href="faq" class="button medium primary" style="padding-right: 38px"><i class="fa fw fa-question"></i> Preguntas frecuentes</a>
+                                    <a href="contacto" class="button medium primary" style="padding-right: 120px"><i class="fa fw fa-clock-o"></i> Horarios</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end section content -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end section -->
+
+    <!-- start medicos -->
+    <section id="section-quotes" class="section parallax section-bg-1" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content" style="padding-bottom: 0">
+
+                <!-- start row -->
+                <div class="row">
+
+                    <div class="col-10" style="float: none; margin: 0 auto; text-align: center">
+                        <div class="clearfix" style="height: 10px;"></div>
+                        <div class="icon circle primary big"><i class="fa fa-user-md"></i></div>
+                        <h2>Información para los médicos</h2>
+
+                        <p>Toda la información para los médicos la puede encontrar aquí</p>
+
+                        <div class="row">
+                            <ul class="unstyled">
+                                <a href="menu-prestacional" class="button medium primary"><i class="fa fw fa-list"></i> Menú prestacional</a>
+                                <a href="valores-referencia" class="button medium primary"><i class="fa fw fa-check-circle-o"></i> Valores de referencia</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- end section content -->
+
+            </div>
+            <!-- end container -->
+
+    </section>
+    <!-- end section -->
+
+    <!-- start fotos -->
+    <section id="section-portfolio" class="section light">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content">
+
+                <!-- start section header -->
+                <header class="content-header section-header text-center">
+                    <h2>Fotos</h2>
+                    <p class="lead">Pase y vea nuestro Laboratorio de adentro hacia afuera</p>
+                </header>
+                <!-- end section header -->
+
+                <!-- start projects -->
+                <div class="projects row">
+
+                    <!-- project 1 -->
+                    <div class="col-24 web">
+                        <article class="project">
+                            <figure class="project-thumb">
+                                <img src="/public/assets/images/photos/12s.jpg" alt="project-1">
+                                <figcaption class="middle">
+                                    <div>
+                                        <a href="assets/images/photos/12.jpg" class="icon circle medium lightbox" title="Computadora principal"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                            <header class="project-header">
+                                <h4 class="project-title"><a href="project.html">Computadora principal</a></h4>
+                                <div class="project-meta">Zona de trabajo</div>
+                            </header>
+                        </article>
+                    </div>
+
+                    <!-- project 2 -->
+                    <div class="col-24 photo">
+                        <article class="project">
+                            <figure class="project-thumb">
+                                <img src="/public/assets/images/photos/4s.jpg" alt="project-2">
+                                <figcaption class="middle">
+                                    <div>
+                                        <a href="assets/images/photos/4.jpg" class="icon circle medium lightbox" title="Atención al público"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                            <header class="project-header">
+                                <h4 class="project-title"><a href="project.html">Atención al público</a></h4>
+                                <div class="project-meta">Interior</div>
+                            </header>
+                        </article>
+                    </div>
+
+                    <!-- project 3 -->
+                    <div class="col-24 app">
+                        <article class="project">
+                            <figure class="project-thumb">
+                                <img src="/public/assets/images/photos/2s.jpg" alt="project-3">
+                                <figcaption class="middle">
+                                    <div>
+                                        <a href="assets/images/photos/2.jpg" class="icon circle medium lightbox" title="Perfil del Laboratorio"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                            <header class="project-header">
+                                <h4 class="project-title"><a href="project.html">Perfil del Laboratorio</a></h4>
+                                <div class="project-meta">Exterior</div>
+                            </header>
+                        </article>
+                    </div>
+
+
+                </div>
+                <!-- end projects -->
+
+                <div style="margin-left: auto; margin-right: auto; width: 210px;"> <a href="fotos" class="button medium primary"><i class="fa fa-camera"></i> Ver todas las fotos</a> </div>
+
+            </div>
+            <!-- end section content -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end section -->
+
+
+    <!-- start personal -->
+    <section id="section-staff" class="section light section-bg-2" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content">
+
+                <!-- start section header -->
+                <header class="content-header section-header text-center">
+                    <h2>Conozca nuestro personal</h2>
+                    <p class="lead">Contamos con un equipo de personas altamente calificadas para un trabajo excepcional</p>
+                </header>
+                <!-- end section header -->
+
+                <!-- start staff -->
+                <div class="staff row" style="text-align:center">
+                    <a class="button blue big"><i class="fa fa-user-md"></i> Dr. José Carlos Celada - <i>Bioquímico Director Técnico</i></a>
+                    <a class="button blue big"><i class="fa fa-user-md"></i> Dra. María J Lopez de Armentia - <i>Bioquímica Área Hematología y Endocrinología</i></a>
+                    <a class="button blue big"><i class="fa fa-users"></i> Julia Azucena Arce - <i>Administrativa</i></a>
+                    <a class="button blue big"><i class="fa fa-users"></i> Claudia Giorno - <i>Administrativa</i></a>
+                    <a class="button blue big"><i class="fa fa-globe"></i> Lic. Guido José Celada - <i>Desarrollador Web</i></a>
+                    <a class="button blue big"><i class="fa fa-puzzle-piece"></i> Marcelo Ballerini - <i>Programador del Sistema del Laboratorio</i></a>
+                    <a class="button blue big"><i class="fa fa-flask"></i> Sandra Martino - <i>Técnica en Laboratorio</i></a>
+                    <a class="button blue big"><i class="fa fa-flask"></i> Graciela Colansky - <i>Técnica en Laboratorio</i></a>
+                </div>
+                <!-- end staff -->
+
+            </div>
+            <!-- end section content -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end section -->
+
+
+</main>
+<!-- end main -->
+
+
+<!-- start footer -->
+<footer id="site-footer">
+
+
+    <!-- start footer bottom -->
+    <section id="footer-bottom" class="section section-bg-1 dark" data-overlay="#202020" data-overlay-opacity="0.8" data-pattern="dot" data-pattern-opacity="0.9">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start row -->
+            <div class="row">
+
+                <address>
+                    <div class="col-24">
+                        <a href="https://goo.gl/maps/hxAK8"><span class="icon small"><img src="/public/img/location.png" alt="Tel" /></span> <span>Avenida 51 Nº1746 (Casi Esquina 30).</span><br><span style="margin-left:30px">La Plata, Bs As, Argentina</span></a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="tel:+542214519943"><span class="icon small"><img src="/public/img/telephone.png" alt="Tel" /></span> (0221) 451 9943</a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="mailto:celadalab@gmail.com"><span class="icon small"><img src="/public/img/email.png" alt="Email" /></span>celadalab@gmail.com</a>
+                    </div>
+                </address>
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end footer bottom -->
+
+</footer>
+<!-- end footer -->
+
+<!-- place scripts at the end of body for better performance -->
+<script type="text/javascript" src="/public/src/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/public/src/hoverdir/jquery.hoverdir.min.js"></script>
+<script type="text/javascript" src="/public/src/slicknav/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="/public/src/appear/jquery.appear.js"></script>
+<script type="text/javascript" src="/public/src/countup/countUp.min.js"></script>
+<script type="text/javascript" src="/public/src/twitter/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/public/src/easypiechart/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="/public/src/sticky/jquery.sticky.js"></script>
+<script type="text/javascript" src="/public/src/tooltipster/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="/public/src/swipebox/jquery.swipebox.min.js"></script>
+
+<script type="text/javascript" src="/public/js/casanova.menu.js"></script>
+<script type="text/javascript" src="/public/js/casanova.accordion.js"></script>
+<script type="text/javascript" src="/public/js/casanova.tabs.js"></script>
+<script type="text/javascript" src="/public/js/casanova.fitmedia.js"></script>
+<script type="text/javascript" src="/public/js/casanova.min.js"></script>
+<script type="text/javascript" src="/public/js/init.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54923911-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>

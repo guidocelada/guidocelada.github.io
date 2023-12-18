@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Celada - Laboratorio de Análisis Clinicos en La Plata</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <!-- start stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/public/css/core.css">
+    <!-- end stylesheets -->
+
+    <!-- start scripts -->
+    <script type="text/javascript" src="/public/src/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/public/src/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- end scripts -->
+
+    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 14:00hs." />
+
+    <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        a.button.blue.big{
+            cursor: default;
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+<!-- start header -->
+<header id="site-header" class="header section light">
+
+    <!-- start container -->
+    <div class="container">
+
+        <!-- start row -->
+        <div class="row">
+
+            <!-- start logo -->
+            <div id="logo" class="col-29">
+                <h1 class="site-title"><a href="/"><img src="/public/img/logo-dark.png" alt="Laboratorio Celada"></a></h1>
+            </div>
+            <!-- end logo -->
+
+            <!-- start header widgets -->
+            <div id="header-widgets" class="col-7">
+
+
+                <!-- start site nav -->
+                <nav id="site-nav" class="nav horizontal text-right">
+                    <ul class="dropdown">
+                        <li><a href="/">Inicio</a></li>
+
+                        <li><a href="empresa">Empresa</a>
+                            <ul>
+                                <li><a href="empresa" >Misión / Visión</a></li>
+                                <li><a href="empresa#calidad">Calidad</a></li>
+                                <li><a href="empresa#acreditacion">Acreditacion</a></li>
+                                <li><a href="empresa#personal">Personal</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pacientes">Pacientes</a>
+                            <ul>
+                                <!-- <li><a href="resultados-online">Resultados online</a></li> -->
+                                <li><a href="analisis">Requisitos para análisis</a></li>
+                                <li><a href="obras-sociales">Obras sociales</a></li>
+                                <li><a href="faq">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="medicos">Medicos</a>
+                            <ul>
+                                <li><a href="menu-prestacional">Menu prestacional</a></li>
+                                <li><a href="valores-referencia">Valores de referencia</a></li>
+                                <li><a href="ingreso-medicos">Ingreso médicos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fotos">Fotos</a></li>
+                        <li><a href="contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- end site nav -->
+
+            </div>
+            <!-- end header widgets -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- end container -->
+</header>
+<!-- end header -->
+
+
+
+
+
+
+
+<script>
+    function sortList(selector) {
+        $(selector).children("li").sort(function(a, b) {
+            var upA = $(a).text().toUpperCase();
+            var upB = $(b).text().toUpperCase();
+            return (upA < upB) ? -1 : (upA > upB) ? 1 : 0;
+        }).appendTo(selector);
+    }
+
+    $(document).ready(function() {
+        sortList('#list1');
+        sortList('#list2');
+        sortList('#list3');
+        sortList('#list4');
+        sortList('#list5');
+        sortList('#list6');
+    });
+
+</script>
+
+<!-- start main -->
+<main id="main">
+
+    <!-- start page title section -->
+    <section class="page-title section light parallax section-bg-1" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="icon circle primary big"><i class="fa fa-user-md"></i></div>
+                    <!-- start page title -->
+                    <header class="section-header content-header">
+                        <h1 class="title">Médicos / Menú prestacional</h1>
+                        <p class="subtitle lead">Análisis posibles realizados en el laboratorio</p>
+                    </header>
+                    <!-- end page title -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title section -->
+
+    <!-- start main content -->
+    <section id="main-content" class="section light">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start section content -->
+            <div class="section-content row">
+
+                <div class="row">
+                    <div class="col-5">
+
+                        <div class="tabs vertical row">
+                            <nav class="tabnav nav col-27">
+                                <ul>
+                                    <li class="active"><a href="#inmunologia" class="active">Inmunología</a></li>
+                                    <li class=""><a href="#quimica-clinica">Química clínica</a></li>
+                                    <li class=""><a href="#enzimoinmunoensayos">Enzimoinmunoensayos</a></li>
+                                    <li class=""><a href="#hematología">Hematología</a></li>
+                                    <li class=""><a href="#orinas">Orinas</a></li>
+                                    <li class=""><a href="#bacteriologia">Bacteriología</a></li>
+
+                                </ul>
+                            </nav>
+
+                            <div class="tab col-9" style="display: block;" id="inmunologia">
+                                <h2>Inmunología</h2>
+                                <ul id="list1">
+                                    <li>Antiestreptolisinas O.</li>
+                                    <li>Proteína C reactiva.</li>
+                                    <li>Látex  A/R.</li>
+                                    <li>Factor reumatoideo.</li>
+                                    <li>Rose Ragan.</li>
+                                    <li>Células LE.</li>
+                                    <li>Mononucleosis, Paul-Bunnell.</li>
+                                    <li>Mononucleosis – Monotest.</li>
+                                    <li>Reacción de Huddlesson.</li>
+                                    <li>Anticuerpos Anti Brucella Abortus.</li>
+                                    <li>Reacción de Widal.</li>
+                                    <li>Paratifus A.</li>
+                                    <li>Paratifus B.</li>
+                                    <li>Tifus O.</li>
+                                    <li>Tifus H.</li>
+                                    <li>Autoanticuerpos</li>
+                                    <li>Anti Nucleocitoplasmatico . (FAN/AAN).</li>
+                                    <li>Anti RO (Ssa).</li>
+                                    <li>ANTI SM.</li>
+                                    <li>Anticuerpos Anti Centrómero.</li>
+                                    <li>ANTI JO-1.</li>
+                                    <li>Anticuerpos ANTI RO (Ssa).</li>
+                                    <li>Anticuerpos Anti-Topoisomerasas (Scl 70).</li>
+                                    <li>Anticuerpos Anti LA (Ssb).</li>
+                                    <li>Anticuerpos RNP.</li>
+                                    <li>Anticuerpos Anti Citoplasma de Neutrófilos (ANCA).</li>
+                                    <li>Anticuerpos Anti Mitocôndria (AMA).</li>
+                                    <li>Anticuerpos Anti músculo liso ( ASMA).</li>
+                                    <li>Anticuerpos Anti ADN Nativo.</li>
+                                    <li>Complemento Total CH 50.</li>
+                                    <li>Complemento C1 q.</li>
+                                    <li>Complemento C3.</li>
+                                    <li>Complemento C4.</li>
+                                    <li>C1 Iinhibidor.</li>
+                                    <li>C1q complemento (proteína 11s).</li>
+                                    <li>Insulina.</li>
+                                    <li>Determinación de Ig E Específicas.</li>
+                                    <li>Anticuerpos anti-Citomegalovirus IgG, IgM.</li>
+                                    <li>Anticuerpos anti Tripanosoma cuzi (Chagas Test).</li>
+                                    <li>Toxoplasmosis hemaglutinación.</li>
+                                    <li>Anticuerpos para Toxoplasmosis IgG, IgM.</li>
+                                    <li>Anticuerpos anti Rubéola IgG, IgM.</li>
+                                    <li>VDRL.</li>
+                                    <li>Anticuerpos anti Treponema Pallidum.</li>
+                                    <li>Anticuerpos anti Listeria monocytogenes.</li>
+                                    <li>Transferrina.</li>
+                                    <li>Saturación de Transferrina.</li>
+                                    <li>Ferritina.</li>
+                                    <li>Serología Hepatitis A: Anti HAV IgG, IgM.</li>
+                                    <li>Serologia Hepatitis B: HBsAg, anti HBs, HBe Ag, Anti HBe, Anti HBC.</li>
+                                    <li>Serologia Hepatitis C: Anti HCV.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="quimica-clinica">
+                                <h2>Química clínica</h2>
+                                <ul id="list2">
+                                    <li>Triglicéridos.</li>
+                                    <li>Colesterol total.</li>
+                                    <li>Colesterol HDL.</li>
+                                    <li>Colesterol LDL.</li>
+                                    <li>Índice CT/C-HDL  </li>
+                                    <li>Relación TG/C-HDL.</li>
+                                    <li>Lipemia.</li>
+                                    <li>Lipidograma.</li>
+                                    <li>Fosfolípidos.</li>
+                                    <li>Glucemia.        </li>
+                                    <li>Cetonemia.            </li>
+                                    <li>Urea.                      </li>
+                                    <li>Acido Úrico.                </li>
+                                    <li>Creatinina.                </li>
+                                    <li>Sodio.                          </li>
+                                    <li>Potasio.                      </li>
+                                    <li>Cloruro.                       </li>
+                                    <li>Calcio.                         </li>
+                                    <li>Fósforo.                        </li>
+                                    <li>Magnesio. </li>
+                                    <li>Hierro.</li>
+                                    <li>Lítio.      </li>
+                                    <li>Fosfatasa alcalina.</li>
+                                    <li>TGP.                    </li>
+                                    <li>TGO.    </li>
+                                    <li>Bilirrubina total y fracciones.                        </li>
+                                    <li>Gama GT.                        </li>
+                                    <li>CK.</li>
+                                    <li>CKMB.</li>
+                                    <li>LDH.</li>
+                                    <li>Amilasa.</li>
+                                    <li>Colinesterasa.</li>
+                                    <li>5 ‘ Nucleotidasa.</li>
+                                    <li>Fructosamina.</li>
+                                    <li>Hemoglobina glicosilada.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="enzimoinmunoensayos">
+                                <h2>Enzimoinmunoensayos</h2>
+                                <ul id="list3">
+                                    <li>TSH.</li>
+                                    <li>Test de TRH.</li>
+                                    <li>T4.</li>
+                                    <li>T4 libre.</li>
+                                    <li>T3. </li>
+                                    <li>T3 libre.</li>
+                                    <li>Tiroglobulina.</li>
+                                    <li>Anticuerpos Anti-Microsomal.</li>
+                                    <li>Anticuerpos Anti-Tiroglobulínico.</li>
+                                    <li>Anticuerpos Anti-peroxidasa.</li>
+                                    <li>Insulina.</li>
+                                    <li>Gonadotrofina Coriónica humana (Sub-unidadBeta de hCG).  </li>
+                                    <li>ACTH.</li>
+                                    <li>Prolactina.</li>
+                                    <li>Cortisol.</li>
+                                    <li>Cortisol Libre Urinario. </li>
+                                    <li>17 - Cetoesteroides Urinarios.</li>
+                                    <li>17-Hidrocorticoides Urinarios.</li>
+                                    <li>Osteocalcina.</li>
+                                    <li>Hidroxiprolina.</li>
+                                    <li>Piridolina.</li>
+                                    <li>Deoxipiridolina.</li>
+                                    <li>LH.</li>
+                                    <li>FSH.</li>
+                                    <li>Progesterona.</li>
+                                    <li>Estradiol.</li>
+                                    <li>Testosterona.</li>
+                                    <li>Testosterona biodisponible.</li>
+                                    <li>Testosterona libre.</li>
+                                    <li>17-Hidroxiprogesterona.</li>
+                                    <li>Delta 4 Androstenodiona.</li>
+                                    <li>Dehidroepiandrosterona (DHEAs).</li>
+                                    <li>Glucuronidato de androstenodiol.</li>
+                                    <li>SHBG-GLAE.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="hematologia">
+                                <h2>Hematología</h2>
+
+                                <ul id="list4">
+                                    <li>   Hemograma. </li>
+                                    <li>   Plaquetas.   </li>
+                                    <li>Eritrosedimentación.  </li>
+                                    <li>Tiempo de coagulación.</li>
+                                    <li>Tiempo de sangría.</li>
+                                    <li>Concentración de protrombina.     </li>
+                                    <li>KPTT.                           </li>
+                                    <li>Retracción del coágulo.</li>
+                                    <li>Recuento de plaquetas.</li>
+                                    <li>Volumen plaquetario medio.</li>
+                                    <li>Macroplaquetas (P-LCR). </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="orinas">
+                                <h2>Orinas</h2>
+                                <ul id="list5">
+                                    <li>Orina Completa: examen fisicoquímico y microscópico del sedimento.</li>
+                                    <li>Orina de 24 Hs: determinaciones analíticas y clearances.</li>
+                                    <li>Recuento de Addis.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab col-9" style="display: none;" id="bacteriología">
+                                <h2>Bacteriología</h2>
+                                <ul id="list6">
+                                    <li>Urocultivo: Aislamiento y tipificación de gérmenes, recuento de colonias y antibiograma.</li>
+                                    <li>Exudados vaginales y uretrales: directo, cultivo e identificación del germen.</li>
+                                    <li>Esputo: directo, tipificación y antibiograma.</li>
+                                    <li>Heridas: directo, cultivo, tipificación y antibiograma.</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end section content -->
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end main content -->
+
+</main>
+<!-- end main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start footer -->
+<footer id="site-footer">
+
+
+    <!-- start footer bottom -->
+    <section id="footer-bottom" class="section section-bg-1 dark" data-overlay="#202020" data-overlay-opacity="0.8" data-pattern="dot" data-pattern-opacity="0.9">
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start row -->
+            <div class="row">
+
+                <address>
+                    <div class="col-24">
+                        <a href="https://goo.gl/maps/hxAK8"><span class="icon small"><img src="/public/img/location.png" alt="Tel" /></span> <span>Avenida 51 Nº1746 (Casi Esquina 30).</span><br><span style="margin-left:30px">La Plata, Bs As, Argentina</span></a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="tel:+542214519943"><span class="icon small"><img src="/public/img/telephone.png" alt="Tel" /></span> (0221) 451 9943</a><br>
+                    </div>
+                    <div class="col-24" style="">
+                        <a href="mailto:celadalab@gmail.com"><span class="icon small"><img src="/public/img/email.png" alt="Email" /></span>celadalab@gmail.com</a>
+                    </div>
+                </address>
+
+            </div>
+            <!-- end row -->
+
+        </div>
+        <!-- end container -->
+
+    </section>
+    <!-- end footer bottom -->
+
+</footer>
+<!-- end footer -->
+
+<!-- place scripts at the end of body for better performance -->
+<script type="text/javascript" src="/public/src/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/public/src/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/public/src/hoverdir/jquery.hoverdir.min.js"></script>
+<script type="text/javascript" src="/public/src/slicknav/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="/public/src/appear/jquery.appear.js"></script>
+<script type="text/javascript" src="/public/src/countup/countUp.min.js"></script>
+<script type="text/javascript" src="/public/src/twitter/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/public/src/easypiechart/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="/public/src/sticky/jquery.sticky.js"></script>
+<script type="text/javascript" src="/public/src/tooltipster/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="/public/src/swipebox/jquery.swipebox.min.js"></script>
+
+<script type="text/javascript" src="/public/js/casanova.menu.js"></script>
+<script type="text/javascript" src="/public/js/casanova.accordion.js"></script>
+<script type="text/javascript" src="/public/js/casanova.tabs.js"></script>
+<script type="text/javascript" src="/public/js/casanova.fitmedia.js"></script>
+<script type="text/javascript" src="/public/js/casanova.min.js"></script>
+<script type="text/javascript" src="/public/js/init.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54923911-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

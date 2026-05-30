@@ -5,7 +5,7 @@ Sitio oficial de Laboratorio Celada, laboratorio de análisis clínicos ubicado 
 ## Información principal
 
 - Dirección: Avenida 51 Nº 1746 1/2, casi esquina 30, La Plata, Buenos Aires, Argentina.
-- Servicios: análisis clínicos, extracción de sangre, extracción a domicilio, resultados por email y atención por WhatsApp.
+- Servicios: análisis clínicos, extracción de sangre, extracción a domicilio, resultados impresos en laboratorio, resultados por email y atención por WhatsApp.
 - Horario de extracciones: lunes a viernes de 6:30 a 10:00.
 - Horario de resultados: lunes a viernes de 10:00 a 13:00.
 - Email: celadalab@gmail.com.

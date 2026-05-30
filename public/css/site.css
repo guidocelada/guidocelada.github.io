@@ -405,7 +405,7 @@ main > section {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 72%)),
+        linear-gradient(180deg, rgb(0 0 0 / 42%), rgb(0 0 0 / 80%)),
         url("/public/assets/images/photos/3.jpg") center / cover;
 }
 
@@ -482,7 +482,7 @@ h2 {
 
 .hero-lead {
     max-width: 37rem;
-    color: rgb(255 255 255 / 90%);
+    color: white;
     font-size: clamp(1.08rem, 2.5vw, 1.35rem);
     font-weight: 600;
     line-height: 1.35;

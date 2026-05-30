@@ -1,466 +1,599 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <title>Laboratorio Celada - Laboratorio de Análisis Clinicos en La Plata</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio Celada | Análisis clínicos en La Plata</title>
+    <meta name="description" content="Laboratorio de análisis clínicos en La Plata. Más de 40 años en Avenida 51 casi esquina 30. Resultados por email, atención por WhatsApp y extracción a domicilio.">
+    <link rel="canonical" href="https://laboratoriocelada.com.ar/">
+    <meta name="theme-color" content="#f6c400">
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Laboratorio Celada">
+    <meta property="og:title" content="Laboratorio Celada | Análisis clínicos en La Plata">
+    <meta property="og:description" content="Más de 40 años acompañando a pacientes de La Plata. Consultas por WhatsApp, resultados por email y extracción a domicilio.">
+    <meta property="og:url" content="https://laboratoriocelada.com.ar/">
+    <meta property="og:image" content="https://laboratoriocelada.com.ar/public/assets/images/photos/3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- start stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="/public/css/core.css">
-    <!-- end stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+    <link rel="stylesheet" href="/public/css/site.css">
 
-    <!-- start scripts -->
-    <script type="text/javascript" src="/public/src/modernizr/modernizr.custom.js"></script>
-    <script type="text/javascript" src="/public/src/jquery/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="/public/src/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- end scripts -->
-
-    <meta name="description" content="Calle 51 esq 30. Horarios de Lunes a Viernes de 07:00hs a 10:00hs, Entrega de resultados de 10:00hs a 13:00hs." />
-
-    <link rel="icon"  type="image/x-icon" href="/public/favicon.ico">
-    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-
-    <style>
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-        a.button.blue.big{
-            cursor: default;
-            font-size: 14px
-        }
-    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DiagnosticLab",
+        "@id": "https://laboratoriocelada.com.ar/#laboratorio",
+        "name": "Laboratorio Celada",
+        "url": "https://laboratoriocelada.com.ar/",
+        "image": "https://laboratoriocelada.com.ar/public/assets/images/photos/3.jpg",
+        "description": "Laboratorio de análisis clínicos en La Plata con más de 40 años de trayectoria, resultados por email, atención por WhatsApp y servicio de extracción a domicilio.",
+        "telephone": "+54-221-451-9943",
+        "email": "celadalab@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida 51 Nº 1746 1/2, casi esquina 30",
+            "addressLocality": "La Plata",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "La Plata"
+        },
+        "sameAs": [
+            "https://www.facebook.com/LaboratorioCelada/"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "51",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Paciente en Google Maps"
+                },
+                "reviewBody": "Excelente. Súper recomendable. Atienden muy bien y se nota que tienen muchísima experiencia."
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Paciente en Google Maps"
+                },
+                "reviewBody": "El lugar es tranquilo. La secretaria es muy atenta. La persona que toma las muestras es tranquila y amable. Responden el WhatsApp."
+            }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "06:30",
+                "closes": "10:00",
+                "description": "Horario de extracciones"
+            }
+        ]
+    }
+    </script>
 </head>
-
 <body>
-<!-- start header -->
-<header id="site-header" class="header section light">
+    <svg class="svg-sprite" aria-hidden="true">
+        <symbol id="icon-vial" viewBox="0 0 24 24"><path d="M9 3h6v2l-1.6 1.6V19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V6.6L7 5V3h2Zm.5 7h4"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 6h16v12H4V6Zm0 1 8 6 8-6"/></symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M8.5 4.5 6 6.2c-.5.4-.7 1-.5 1.6 1.6 4.8 4.9 8.1 9.7 9.7.6.2 1.2 0 1.6-.5l1.7-2.5-3.5-2-1.2 1.4c-1.8-.9-3-2.1-3.8-3.8l1.4-1.2-1.9-3.4Z"/></symbol>
+        <symbol id="icon-syringe" viewBox="0 0 24 24"><path d="m17 3 4 4"/><path d="m14 6 4 4"/><path d="M4 20l5.5-5.5"/><path d="m7.5 11.5 5 5"/><path d="m10 9 5 5"/><path d="m8 13 6-6 3 3-6 6H8v-3Z"/><path d="m15.5 4.5 4 4"/></symbol>
+        <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M9 4h6l1 2h3v15H5V6h3l1-2Zm0 7h6m-6 4h6"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 2.75a7 7 0 0 0-7 7c0 5.25 7 11.5 7 11.5s7-6.25 7-11.5a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 16 16"><path fill="currentColor" stroke="none" d="M13.6 2.33A7.85 7.85 0 0 0 7.99 0C3.63 0 .07 3.56.06 7.93c0 1.4.37 2.76 1.06 3.97L0 16l4.2-1.1a7.93 7.93 0 0 0 3.79.96h.01c4.37 0 7.93-3.56 7.93-7.93a7.9 7.9 0 0 0-2.33-5.6ZM8 14.52a6.57 6.57 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.56 6.56 0 0 1-1-3.5c0-3.63 2.96-6.59 6.59-6.59a6.56 6.56 0 0 1 4.66 1.93 6.56 6.56 0 0 1 1.93 4.66c0 3.64-2.96 6.59-6.59 6.59Zm3.62-4.93c-.2-.1-1.17-.58-1.35-.65-.18-.06-.32-.1-.45.1-.13.2-.51.65-.63.78-.11.13-.23.15-.43.05-.2-.1-.84-.31-1.59-.99-.59-.52-.99-1.17-1.1-1.37-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.35.1-.11.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.47-.16-.39-.32-.34-.45-.34h-.38c-.13 0-.35.05-.53.25-.18.2-.69.68-.69 1.65s.71 1.91.81 2.04c.1.13 1.39 2.13 3.38 2.98.47.2.84.32 1.13.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.34-.94.16-.46.16-.85.11-.94-.05-.08-.18-.13-.38-.23Z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.03H7.9v-2.9h2.54V9.84c0-2.52 1.5-3.92 3.78-3.92 1.1 0 2.24.2 2.24.2v2.48h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.77l-.44 2.9h-2.33V22C18.34 21.25 22 17.08 22 12.06Z"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 6 6.5.8-4.8 4.5 1.3 6.4-5.8-3.2-5.8 3.2 1.3-6.4-4.8-4.5 6.5-.8L12 2.8Z"/></symbol>
+    </svg>
 
-    <!-- start container -->
-    <div class="container">
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-        <!-- start row -->
-        <div class="row">
-
-            <!-- start logo -->
-            <div id="logo" class="col-29">
-                <h1 class="site-title"><a href="/"><img src="/public/img/logo-dark.png" alt="Laboratorio Celada"></a></h1>
-            </div>
-            <!-- end logo -->
-
-            <!-- start header widgets -->
-            <div id="header-widgets" class="col-7">
-
-
-                <!-- start site nav -->
-                <nav id="site-nav" class="nav horizontal text-right">
-                    <ul class="dropdown">
-                        <li><a href="/">Inicio</a></li>
-
-                        <li><a href="empresa">Empresa</a>
-                            <ul>
-                                <li><a href="empresa" >Misión / Visión</a></li>
-                                <li><a href="empresa#calidad">Calidad</a></li>
-                                <li><a href="empresa#acreditacion">Acreditacion</a></li>
-                                <li><a href="empresa#personal">Personal</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="pacientes">Pacientes</a>
-                            <ul>
-
-                                <li><a href="analisis">Requisitos para análisis</a></li>
-                                <li><a href="obras-sociales">Obras sociales</a></li>
-                                <li><a href="faq">Preguntas Frecuentes</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="medicos">Medicos</a>
-                            <ul>
-                                <li><a href="menu-prestacional">Menu prestacional</a></li>
-                                <li><a href="valores-referencia">Valores de referencia</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="fotos">Fotos</a></li>
-                        <li><a href="contacto">Contacto</a></li>
-                    </ul>
-                </nav>
-                <!-- end site nav -->
-
-            </div>
-            <!-- end header widgets -->
-
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="/" aria-label="Laboratorio Celada, inicio">
+                <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 72 72"><path d="M52.06 17.93A27 27 0 1 0 52.06 54.07L43.15 46.04A15 15 0 1 1 43.15 25.96Z"/><circle class="brand-dot" cx="55" cy="36" r="6.5"/></svg></span>
+                <span class="brand-text"><span>Laboratorio</span><strong>Celada</strong></span>
+            </a>
+            <nav class="desktop-nav" aria-label="Navegación principal">
+                <a href="#servicios">Servicios</a>
+                <a href="#resenas">Reseñas</a>
+                <a href="#obras-sociales">Obras sociales</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a class="header-action" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta%20al%20Laboratorio%20Celada">
+                <svg><use href="#icon-whatsapp"/></svg>
+                WhatsApp
+            </a>
+            <details class="mobile-menu">
+                <summary aria-label="Abrir menú">
+                    <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                    <span class="menu-word" aria-hidden="true">Menú</span>
+                </summary>
+                <div class="mobile-menu-panel">
+                    <a href="#servicios"><strong>Servicios</strong><span>Análisis, extracciones y resultados</span></a>
+                    <a href="#resenas"><strong>Reseñas</strong><span>Opiniones reales en Google Maps</span></a>
+                    <a href="#obras-sociales"><strong>Obras sociales</strong><span>Coberturas y requisitos</span></a>
+                    <a href="#faq"><strong>Preguntas frecuentes</strong><span>Ayuno, muestras y preparación</span></a>
+                    <a href="#contacto"><strong>Contacto y ubicación</strong><span>Av. 51 Nº1746 <span class="address-half">1/2</span>, casi esquina 30</span></a>
+                    <a class="menu-whatsapp" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta%20al%20Laboratorio%20Celada">
+                        <svg><use href="#icon-whatsapp"/></svg>
+                        Consultar por WhatsApp
+                    </a>
+                </div>
+            </details>
         </div>
-        <!-- end row -->
+    </header>
 
-    </div>
-    <!-- end container -->
-</header>
-<!-- end header -->
+    <main id="contenido">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-media" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="badge">Desde hace más de 40 años</p>
+                <h1 id="hero-title">Tu laboratorio de confianza<br/>en La Plata</h1>
+                <p class="hero-lead">Análisis clínicos confiables, atención personalizada y más de 40 años acompañando a las familias de La Plata.</p>
+                <ul class="hero-facts" aria-label="Información rápida">
+                    <li><strong>Extracciones</strong><span>Lun a vie, 6:30 a 10:00</span></li>
+                    <li><strong>Resultados</strong><span>10:00 a 13:00, o vía Email / WhatsApp</span></li>
+                </ul>
+                <div class="hero-cta">
+                    <a class="button primary" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta%20al%20Laboratorio%20Celada">
+                        <svg><use href="#icon-whatsapp"/></svg>
+                        Consultar por WhatsApp
+                    </a>
+                    <a class="button ghost" href="https://maps.app.goo.gl/j3YgX48xKxyZjCq37">
+                        <svg><use href="#icon-pin"/></svg>
+                        Av. 51 Nº1746 <span class="address-half">1/2</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<main id="main">
+        <section class="service-board" id="servicios" aria-label="Servicios principales">
+            <a class="service-tile" href="#estudios">
+                <svg><use href="#icon-vial"/></svg>
+                <strong>Análisis clínicos</strong>
+            </a>
+            <a class="service-tile" href="#contacto">
+                <svg><use href="#icon-syringe"/></svg>
+                <strong>Extracción de muestras</strong>
+            </a>
+            <a class="service-tile" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20extraccion%20a%20domicilio">
+                <svg><use href="#icon-home"/></svg>
+                <strong>Extracciones a domicilio</strong>
+            </a>
+            <a class="service-tile" href="mailto:celadalab@gmail.com?subject=Consulta%20por%20resultados">
+                <svg><use href="#icon-mail"/></svg>
+                <strong>Resultados por email</strong>
+            </a>
+            <a class="service-tile" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta%20al%20Laboratorio%20Celada">
+                <svg><use href="#icon-whatsapp"/></svg>
+                <strong>Atención por WhatsApp</strong>
+            </a>
+            <a class="service-tile" href="#faq">
+                <svg><use href="#icon-clipboard"/></svg>
+                <strong>Preparación</strong>
+            </a>
+        </section>
 
-    <section id="banner" class="tp-banner-container section ">
+        <section class="review-card" id="resenas" aria-labelledby="reviews-title">
+            <div class="review-header">
+                <p class="section-kicker">Opiniones de nuestros pacientes</p>
+                <h2 id="reviews-title">Pacientes que vuelven por la atención</h2>
+                <div class="rating-line" aria-label="Calificación de Google Maps">
+                    <strong>5</strong>
+                    <span class="stars">★★★★★</span>
+                    <span>+50 opiniones en Google Maps</span>
+                </div>
+            </div>
+            <div class="trust-grid compact" aria-label="Datos de confianza">
+                <div><strong>+40 años</strong><span>en La Plata</span></div>
+                <div><strong>+10.000</strong><span>pacientes por año</span></div>
+                <div><strong>5★</strong><span>reseñas recientes</span></div>
+                <div><strong>Email</strong><span>resultados digitales</span></div>
+            </div>
+            <div class="review-list" id="review-list">
+                <figure class="featured-review">
+                    <div class="quote-stars" aria-hidden="true">★★★★★</div>
+                    <blockquote>
+                        <p>Gracias por la humanidad y comprensión hacia el paciente.</p>
+                    </blockquote>
+                    <figcaption>Reseña 5 estrellas en Google Maps</figcaption>
+                </figure>
+                <figure>
+                    <div class="quote-stars" aria-hidden="true">★★★★★</div>
+                    <blockquote>
+                        <p>Atienden muy bien y se nota que tienen muchísima experiencia.</p>
+                    </blockquote>
+                    <figcaption>Paciente de Laboratorio Celada</figcaption>
+                </figure>
+                <figure>
+                    <div class="quote-stars" aria-hidden="true">★★★★★</div>
+                    <blockquote>
+                        <p>El lugar es tranquilo. La secretaria es muy atenta. Responden el WhatsApp.</p>
+                    </blockquote>
+                    <figcaption>Paciente de Google Maps</figcaption>
+                </figure>
+                <figure>
+                    <div class="quote-stars" aria-hidden="true">★★★★★</div>
+                    <blockquote>
+                        <p>Excelente atención. Una mano increíble y el trato súper cordial.</p>
+                    </blockquote>
+                    <figcaption>Paciente de Google Maps</figcaption>
+                </figure>
+            </div>
+            <a class="button outline" href="https://maps.app.goo.gl/j3YgX48xKxyZjCq37">Ver opiniones en Google Maps</a>
+        </section>
 
-        <div class="tp-banner" style="visibility: hidden">
-            <ul>
-                <!-- slide one -->
-                <li data-transition="fade" data-slotamount="6" data-masterspeed="1000">
+        <section class="quick-help" aria-labelledby="help-title">
+            <div class="section-heading">
+                <h2 id="help-title">¿Cómo podemos ayudarte?</h2>
+            </div>
+            <div class="help-list">
+                <a href="https://wa.me/5492215400646?text=Hola%2C%20tengo%20una%20orden%20medica%20y%20quiero%20consultar%20preparacion%20y%20horarios"><svg><use href="#icon-vial"/></svg><span><strong>Quiero hacerme un análisis</strong><small>Enviar la orden y consultar preparación</small></span></a>
+                <a href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20extraccion%20a%20domicilio"><svg><use href="#icon-home"/></svg><span><strong>Extracciones a domicilio</strong><small>Consultar disponibilidad en La Plata</small></span></a>
+                <a href="mailto:celadalab@gmail.com?subject=Consulta%20por%20resultados"><svg><use href="#icon-mail"/></svg><span><strong>Resultados por email</strong><small>Escribir por resultados</small></span></a>
+                <a href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta%20al%20Laboratorio%20Celada"><svg><use href="#icon-whatsapp"/></svg><span><strong>Contactar por WhatsApp</strong><small>Consultas, horarios y obras sociales</small></span></a>
+            </div>
+        </section>
 
-                    <!-- slide bg -->
-                    <img src="/public/assets/images/slide-bg-1.png" alt="slide-bg-1"
-                         data-bgfit="cover"
-                         data-bgposition="left top"
-                         data-bgrepeat="no-repeat">
-
-                    <!-- slide layer 1 -->
-                    <div class="tp-caption fade large-black"
-                         data-x="center"
-                         data-y="155"
-                         data-speed="800"
-                         data-start="500"
-                         data-easing="Back.easeInOut">
-                        Bienvenido a la web del
+        <section class="studies" id="estudios" aria-labelledby="studies-title">
+            <div class="section-heading">
+                <p class="section-kicker">Preparación por prueba</p>
+                <h2 id="studies-title">Cómo venir preparado</h2>
+                <p>Estos son requisitos generales. Si su orden médica indica algo especial, consulte antes de venir.</p>
+            </div>
+            <div class="preparation-list">
+                <details>
+                    <summary>Análisis de sangre</summary>
+                    <div>
+                        <p>Concurrir con 8 horas de ayuno. Si le solicitan perfil lipídico, colesterol HDL/LDL o triglicéridos, el ayuno suele ser de 12 horas.</p>
+                        <p>Durante el ayuno puede tomar agua. Después de la extracción, mantenga el brazo doblado hacia el pecho durante 15 minutos y evite hacer fuerza con ese brazo.</p>
                     </div>
-
-                    <!-- slide layer 2 -->
-                    <div class="tp-caption customin customout big-medium-black"
-                         data-x="center"
-                         data-y="200"
-                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="800"
-                         data-start="1000"
-                         data-easing="Back.easeInOut">
-                        <span style=" ">LABORATORIO</span> <span style="color:rgb(0, 121, 255)">CELADA</span>
+                </details>
+                <details>
+                    <summary>Análisis hormonales</summary>
+                    <div>
+                        <p>Concurrir con 8 horas de ayuno, o 12 horas si también le solicitan perfil lipídico.</p>
+                        <p>Si toma Levotiroxina o Danantizol, no los tome antes de la extracción salvo indicación médica. En hormonas femeninas, informe la fecha de su última menstruación.</p>
                     </div>
-
-                    <!-- slide layer 3 -->
-                    <div class="tp-caption customin customout medium-black"
-                         data-x="center"
-                         data-y="258"
-                         data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="800"
-                         data-start="1500"
-                         data-easing="Back.easeInOut">
-                        Laboratorio de análisis clínicos
+                </details>
+                <details>
+                    <summary>Orina completa</summary>
+                    <div>
+                        <p>Juntar la primera orina de la mañana en un envase limpio y seco, con cierre hermético. Rotular con nombre y apellido en letra clara.</p>
+                        <p>No requiere ayuno. Si se levanta varias veces durante la noche, juntar una única orina con la mayor retención posible.</p>
                     </div>
-                </li>
+                </details>
+                <details>
+                    <summary>Urocultivo</summary>
+                    <div>
+                        <p>No tomar antibióticos al menos 7 días antes de la muestra, salvo indicación médica.</p>
+                        <p>Higienizar genitales externos, descartar el primer chorro y recolectar el chorro medio en recipiente estéril. Conservar en heladera hasta llevarlo al laboratorio.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Orina de 12 o 24 horas</summary>
+                    <div>
+                        <p>Para 24 horas: comenzar a las 7:00, descartar esa orina y recolectar todo el volumen de las orinas siguientes, incluida la de las 7:00 del día siguiente.</p>
+                        <p>Para 12 horas: comenzar a las 19:00, descartar esa orina y recolectar todo el volumen de las orinas siguientes hasta las 7:00. Mantener refrigerado.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Prueba de tolerancia a la glucosa</summary>
+                    <div>
+                        <p>Concurrir con 8 horas de ayuno. Se realiza una extracción, luego se toma una solución de glucosa provista por el bioquímico y se realiza otra extracción a las 2 horas.</p>
+                        <p>Durante toda la prueba debe permanecer en reposo.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Glucosa post prandial</summary>
+                    <div>
+                        <p>Concurrir con 8 horas de ayuno. Se realiza una extracción, luego se indica un desayuno y se realiza otra extracción a las 2 horas.</p>
+                        <p>Durante la prueba debe permanecer en reposo.</p>
+                    </div>
+                </details>
+            </div>
+            <!-- <div class="study-links" aria-label="Material complementario"> -->
+                <!-- <a href="/public/assets/pdf/Urocultivo.pdf">Formulario para urocultivo</a> -->
+                <!-- <a href="/public/assets/pdf/VALORES-NORMALES.pdf">Valores de referencia</a> -->
+                <!-- <a href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20la%20preparacion%20para%20un%20estudio">Consultar preparación por WhatsApp</a> -->
+            <!-- </div> -->
+        </section>
+
+        <section class="split-section" id="domicilio" aria-labelledby="home-title">
+            <div>
+                <p class="section-kicker">Extracción a domicilio</p>
+                <h2 id="home-title">Vamos a tu casa cuando acercarse no es fácil</h2>
+                <p>Servicio para pacientes que necesitan coordinar la extracción en domicilio. La disponibilidad se confirma por WhatsApp.</p>
+                <a class="button primary" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20extraccion%20a%20domicilio">Consultar domicilio</a>
+            </div>
+            <img src="/public/assets/images/photos/6.jpg" alt="Sala de extracción de Laboratorio Celada" width="640" height="480" loading="lazy">
+        </section>
+
+        <section class="split-section reverse" id="resultados" aria-labelledby="results-title">
+            <div>
+                <p class="section-kicker">Resultados</p>
+                <h2 id="results-title">Recibilos por email</h2>
+                <p>Los informes se envían por correo electrónico. Si no los recibió o necesita consultar el estado, puede escribir al laboratorio.</p>
+                <a class="button outline" href="mailto:celadalab@gmail.com">Consultar por email</a>
+            </div>
+            <img src="/public/assets/images/photos/13.jpg" alt="Bioquímico trabajando con el sistema del laboratorio" width="640" height="480" loading="lazy">
+        </section>
+
+        <section class="insurance" id="obras-sociales" aria-labelledby="insurance-title">
+            <div class="section-heading">
+                <p class="section-kicker">Coberturas</p>
+                <h2 id="insurance-title">Obras sociales y prepagas</h2>
+                <p>Busque su cobertura antes de venir. Algunas obras sociales requieren autorización o documentación específica.</p>
+            </div>
+            <label class="insurance-search">
+                <span>Buscar obra social</span>
+                <input id="insurance-search" type="search" autocomplete="off" placeholder="Ej: IOMA, OSDE, PAMI">
+            </label>
+            <p class="insurance-count" id="insurance-count" aria-live="polite">Mostrando todas las coberturas.</p>
+            <ul class="insurance-list" id="insurance-list">
+                <li>ACA Salud</li>
+                <li>Alimentación OSPIA</li>
+                <li>AMEMOP</li>
+                <li>AMEP</li>
+                <li>AMFFA</li>
+                <li>APSOT</li>
+                <li>Banco Provincia</li>
+                <li>CASA</li>
+                <li>Clero San Pedro</li>
+                <li>COMEI</li>
+                <li>DASUTEN</li>
+                <li>Escribanos</li>
+                <li>FATFA</li>
+                <li>Galeno Interior</li>
+                <li>Imedical Life</li>
+                <li>IOMA</li>
+                <li>IOMA Convenio Interprovincial</li>
+                <li>IOSE</li>
+                <li>Labor</li>
+                <li>Luis Pasteur</li>
+                <li>Luz y Fuerza</li>
+                <li>Medicus</li>
+                <li>Medifé</li>
+                <li>OMINT</li>
+                <li>OSAP</li>
+                <li>OSAPM Interior</li>
+                <li>OSDE</li>
+                <li>OSDIPP</li>
+                <li>OSECAC</li>
+                <li>OSPE</li>
+                <li>OSPEBA</li>
+                <li>OSPOCE</li>
+                <li>OSPRERA</li>
+                <li>OSPSA</li>
+                <li>OSSEG Seguros</li>
+                <li>OSSIMRA</li>
+                <li>OSTEE</li>
+                <li>PAMI</li>
+                <li>Poder Judicial</li>
+                <li>Policía Federal</li>
+                <li>SCIS S.A.</li>
+                <li>Servesalud</li>
+                <li>SPM Ostel jubilados y pensionados interior</li>
+                <li>Swiss Medical</li>
+                <li>Unión Personal Austral OMI</li>
             </ul>
-        </div>
-        <!-- end rev slider -->
+            <p class="insurance-note">Si su cobertura aparece en la lista, tráigala junto con DNI y orden médica. Si no aparece o tiene dudas de autorización, puede escribirnos.</p>
+            <a class="button outline" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20si%20atienden%20mi%20obra%20social">Consultar una cobertura no listada</a>
+        </section>
 
-        <!-- initialize slider -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.tp-banner').revolution({
-                    startwidth: 1050,
-                    startheight: 500,
-                    hideThumbs: 10,
-                    fullWidth: 'on',
-                    forceFullWidth: 'on',
-                    videoJsPath:'src/rs-plugin/videojs/'
-                });
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="section-heading">
+                <p class="section-kicker">Preguntas frecuentes</p>
+                <h2 id="faq-title">Dudas antes de venir</h2>
+            </div>
+            <details>
+                <summary>¿Qué es el ayuno?</summary>
+                <p>Es no comer ni tomar nada, excepto agua, durante el período indicado antes del análisis. En general son 8 horas. Para perfil lipídico o triglicéridos puede requerirse ayuno de 12 horas.</p>
+            </details>
+            <details>
+                <summary>¿Puedo tomar agua en ayunas?</summary>
+                <p>Sí. Puede tomar agua.</p>
+            </details>
+            <details>
+                <summary>¿Puedo tomar mate, té o café?</summary>
+                <p>No. Durante el ayuno no tome mate, té, café, jugos ni bebidas con azúcar o edulcorante, porque pueden afectar el resultado.</p>
+            </details>
+            <details>
+                <summary>¿Puedo cepillarme los dientes antes del análisis?</summary>
+                <p>Sí, puede cepillarse los dientes.</p>
+            </details>
+            <details>
+                <summary>¿Qué orina debo juntar para orina completa?</summary>
+                <p>Junte la primera orina de la mañana en un envase limpio y seco. Rotule el envase con nombre y apellido y tráigalo dentro de una bolsa.</p>
+            </details>
+            <details>
+                <summary>¿Tengo que estar en ayunas para orina completa?</summary>
+                <p>No. La orina completa no requiere ayuno.</p>
+            </details>
+            <details>
+                <summary>¿Tengo que comer liviano la noche anterior?</summary>
+                <p>Cene como lo hace habitualmente. Lo importante es respetar el ayuno indicado para el estudio.</p>
+            </details>
+            <details>
+                <summary>¿Puedo tomar mi medicación habitual?</summary>
+                <p>Consulte con su médico. Si toma Levotiroxina, generalmente debe tomarla después de la extracción.</p>
+            </details>
+            <details>
+                <summary>¿Necesito turno?</summary>
+                <p>Para extracciones habituales no hace falta turno. Para estudios especiales o extracción a domicilio, consulte antes.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto puedo demorar en sala de espera?</summary>
+                <p>El tiempo de espera es variable. Al llegar, consulte con secretaría el tiempo estimado.</p>
+            </details>
+            <details>
+                <summary>¿Cómo recibo mis resultados?</summary>
+                <p>Los resultados se envían por email. También puede consultar el estado por los canales de contacto del laboratorio.</p>
+            </details>
+        </section>
+
+        <section class="contact" id="contacto" aria-labelledby="contact-title">
+            <div>
+                <p class="section-kicker">Contáctanos</p>
+                <h2 id="contact-title">Av. 51 Nº1746 <span class="address-half">1/2</span>, casi esquina 30, La Plata</h2>
+                <p>Extracciones de lunes a viernes de 6:30 a 10:00. Resultados y consultas de 10:00 a 13:00.</p>
+            </div>
+            <div class="contact-actions">
+                <a href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20hacer%20una%20consulta"><svg><use href="#icon-whatsapp"/></svg>WhatsApp</a>
+                <a href="tel:+542214519943"><svg><use href="#icon-phone"/></svg>Teléfono</a>
+                <a href="mailto:celadalab@gmail.com"><svg><use href="#icon-mail"/></svg>Email</a>
+                <a href="https://maps.app.goo.gl/j3YgX48xKxyZjCq37"><svg><use href="#icon-pin"/></svg>Google Maps</a>
+                <a href="https://www.facebook.com/LaboratorioCelada/"><svg><use href="#icon-facebook"/></svg>Facebook</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 72 72"><path d="M52.06 17.93A27 27 0 1 0 52.06 54.07L43.15 46.04A15 15 0 1 1 43.15 25.96Z"/><circle class="brand-dot" cx="55" cy="36" r="6.5"/></svg></span>
+            <span class="brand-text"><span>Laboratorio</span><strong>Celada</strong></span>
+        </div>
+        <p>Más de 40 años brindando análisis clínicos de calidad en La Plata.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const insuranceSearch = document.querySelector("#insurance-search");
+        const insuranceItems = [...document.querySelectorAll("#insurance-list li")];
+        const insuranceCount = document.querySelector("#insurance-count");
+        const revealSections = [...document.querySelectorAll("main > section:not(.hero)")];
+        const reviewList = document.querySelector("#review-list");
+        const reviews = [
+            "Gracias por la humanidad y comprensión hacia el paciente.",
+            "Excelente. Súper recomendable. Atienden muy bien y se nota que tienen muchísima experiencia.",
+            "Excelente todos. Hace años que voy.",
+            "El lugar es tranquilo. La secretaria es muy atenta. La persona que toma las muestras es tranquila y amable. Responden el WhatsApp.",
+            "Puntualidad, eficiencia y muy buena atención.",
+            "Excelente atención. Una mano increíble y el trato súper cordial.",
+            "Muy buena atención y muy buena mano.",
+            "El trato, en general, es sumamente cordial y da mucha confianza.",
+            "Excelente atención, muy profesionales. Recomendado al 100%.",
+            "Excelente atención de las secretarias y el Dr. Celada de 10.",
+            "Atención de excelencia. Súper recomendable.",
+            "Excelente atención y rapidez para entrega de resultados.",
+            "Excelencia en calidad, profesionalismo y atención.",
+            "Excelente atención, ambiente y cordialidad.",
+            "Excelente atención y la extracción es excelente, no deja marcas.",
+            "El mejor y más amoroso de todos.",
+            "Excelente atención de parte de todos, súper rápido además."
+        ];
+        const staggerGroups = [
+            ".service-board .service-tile",
+            ".review-themes span",
+            ".trust-grid div",
+            ".review-list figure",
+            ".help-list a",
+            ".preparation-list details",
+            ".insurance-list li",
+            ".faq details",
+            ".contact-actions a"
+        ];
+
+        document.documentElement.classList.add("motion-ready");
+
+        if (reviewList) {
+            const shuffledReviews = [...reviews].sort(() => Math.random() - 0.5).slice(0, 4);
+            reviewList.innerHTML = shuffledReviews.map((review, index) => `
+                <figure${index === 0 ? ' class="featured-review"' : ""}>
+                    <div class="quote-stars" aria-hidden="true">★★★★★</div>
+                    <blockquote>
+                        <p>${review}</p>
+                    </blockquote>
+                    <figcaption>Reseña 5 estrellas en Google Maps</figcaption>
+                </figure>
+            `).join("");
+        }
+
+        revealSections.forEach((section) => {
+            section.dataset.reveal = "";
+        });
+
+        staggerGroups.forEach((selector) => {
+            document.querySelectorAll(selector).forEach((item, index) => {
+                item.dataset.staggerItem = "";
+                item.style.setProperty("--i", Math.min(index, 10));
             });
-        </script>
-
-    </section>
-    <!-- end banner -->
-
-
-
-    <!-- start pacientes -->
-    <section id="section-teaser" class="section light " data-overlay="#FFFFFF" data-overlay-opacity="0.90">
-
-        <!-- start container -->
-        <div class="container">
-
-            <!-- start section content -->
-            <div class="section-content" style="padding-bottom: 0">
-
-                <!-- start row -->
-                <div class="row">
-                    <div class="col-16">
-                        <img src="/public/assets/images/C.png" alt="display">
-                    </div>
-
-                    <div class="col-20">
-                        <div class="clearfix" style="height: 10px;"></div>
-
-                        <h2>Información para los pacientes</h2>
-
-                        <p>Toda la información para los pacientes la puede encontrar aquí</p>
-
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="unstyled">
-                                    <a href="analisis" class="button medium primary"><i class="fa fw fa-flask"></i> Requisitos para análisis</a>
-                                    <a href="obras-sociales" class="button medium primary" style="padding-right: 82px"><i class="fa fw fa-medkit"></i> Obras Sociales</a>
-                                    <a href="faq" class="button medium primary" style="padding-right: 38px"><i class="fa fw fa-question"></i> Preguntas frecuentes</a>
-                                    <a href="contacto" class="button medium primary" style="padding-right: 120px"><i class="fa fw fa-clock-o"></i> Horarios</a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- end row -->
-
-            </div>
-            <!-- end section content -->
-
-        </div>
-        <!-- end container -->
-
-    </section>
-    <!-- end section -->
-
-    <!-- start medicos -->
-    <section id="section-quotes" class="section parallax section-bg-1" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
-
-        <!-- start container -->
-        <div class="container">
-
-            <!-- start section content -->
-            <div class="section-content" style="padding-bottom: 0">
-
-                <!-- start row -->
-                <div class="row">
-
-                    <div class="col-10" style="float: none; margin: 0 auto; text-align: center">
-                        <div class="clearfix" style="height: 10px;"></div>
-                        <div class="icon circle primary big"><i class="fa fa-user-md"></i></div>
-                        <h2>Información para los médicos</h2>
-
-                        <p>Toda la información para los médicos la puede encontrar aquí</p>
-
-                        <div class="row">
-                            <ul class="unstyled">
-                                <a href="menu-prestacional" class="button medium primary"><i class="fa fw fa-list"></i> Menú prestacional</a>
-                                <a href="valores-referencia" class="button medium primary"><i class="fa fw fa-check-circle-o"></i> Valores de referencia</a>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!-- end row -->
-
-                </div>
-                <!-- end section content -->
-
-            </div>
-            <!-- end container -->
-
-    </section>
-    <!-- end section -->
-
-    <!-- start fotos -->
-    <section id="section-portfolio" class="section light">
-
-        <!-- start container -->
-        <div class="container">
-
-            <!-- start section content -->
-            <div class="section-content">
-
-                <!-- start section header -->
-                <header class="content-header section-header text-center">
-                    <h2>Fotos</h2>
-                    <p class="lead">Pase y vea nuestro Laboratorio de adentro hacia afuera</p>
-                </header>
-                <!-- end section header -->
-
-                <!-- start projects -->
-                <div class="projects row">
-
-                    <!-- project 1 -->
-                    <div class="col-24 web">
-                        <article class="project">
-                            <figure class="project-thumb">
-                                <img src="/public/assets/images/photos/12s.jpg" alt="project-1">
-                                <figcaption class="middle">
-                                    <div>
-                                        <a href="/public/assets/images/photos/12.jpg" class="icon circle medium lightbox" title="Computadora principal"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-
-                            <header class="project-header">
-                                <h4 class="project-title"><a href="project.html">Computadora principal</a></h4>
-                                <div class="project-meta">Zona de trabajo</div>
-                            </header>
-                        </article>
-                    </div>
-
-                    <!-- project 2 -->
-                    <div class="col-24 photo">
-                        <article class="project">
-                            <figure class="project-thumb">
-                                <img src="/public/assets/images/photos/4s.jpg" alt="project-2">
-                                <figcaption class="middle">
-                                    <div>
-                                        <a href="/public/assets/images/photos/4.jpg" class="icon circle medium lightbox" title="Atención al público"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-
-                            <header class="project-header">
-                                <h4 class="project-title"><a href="project.html">Atención al público</a></h4>
-                                <div class="project-meta">Interior</div>
-                            </header>
-                        </article>
-                    </div>
-
-                    <!-- project 3 -->
-                    <div class="col-24 app">
-                        <article class="project">
-                            <figure class="project-thumb">
-                                <img src="/public/assets/images/photos/2s.jpg" alt="project-3">
-                                <figcaption class="middle">
-                                    <div>
-                                        <a href="/public/assets/images/photos/2.jpg" class="icon circle medium lightbox" title="Perfil del Laboratorio"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-
-                            <header class="project-header">
-                                <h4 class="project-title"><a href="project.html">Perfil del Laboratorio</a></h4>
-                                <div class="project-meta">Exterior</div>
-                            </header>
-                        </article>
-                    </div>
-
-
-                </div>
-                <!-- end projects -->
-
-                <div style="margin-left: auto; margin-right: auto; width: 210px;"> <a href="fotos" class="button medium primary"><i class="fa fa-camera"></i> Ver todas las fotos</a> </div>
-
-            </div>
-            <!-- end section content -->
-
-        </div>
-        <!-- end container -->
-
-    </section>
-    <!-- end section -->
-
-
-    <!-- start personal -->
-    <section id="section-staff" class="section light section-bg-2" data-overlay="#FFFFFF" data-overlay-opacity="0.90">
-
-        <!-- start container -->
-        <div class="container">
-
-            <!-- start section content -->
-            <div class="section-content">
-
-                <!-- start section header -->
-                <header class="content-header section-header text-center">
-                    <h2>Conozca nuestro personal</h2>
-                    <p class="lead">Contamos con un equipo de personas altamente calificadas para un trabajo excepcional</p>
-                </header>
-                <!-- end section header -->
-
-                <!-- start staff -->
-                <div class="staff row" style="text-align:center">
-                    <a class="button blue big"><i class="fa fa-user-md"></i> Dr. José Carlos Celada - <i>Bioquímico Director Técnico</i></a>
-                    <a class="button blue big"><i class="fa fa-user-md"></i> Dra. María J Lopez de Armentia - <i>Bioquímica Área Hematología y Endocrinología</i></a>
-                    <a class="button blue big"><i class="fa fa-users"></i> Julia Azucena Arce - <i>Administrativa</i></a>
-                    <a class="button blue big"><i class="fa fa-users"></i> Claudia Giorno - <i>Administrativa</i></a>
-                    <a class="button blue big"><i class="fa fa-globe"></i> Lic. Guido José Celada - <i>Desarrollador Web</i></a>
-                    <a class="button blue big"><i class="fa fa-puzzle-piece"></i> Marcelo Ballerini - <i>Programador del Sistema del Laboratorio</i></a>
-                    <a class="button blue big"><i class="fa fa-flask"></i> Sandra Martino - <i>Técnica en Laboratorio</i></a>
-                    <a class="button blue big"><i class="fa fa-flask"></i> Graciela Colansky - <i>Técnica en Laboratorio</i></a>
-                </div>
-                <!-- end staff -->
-
-            </div>
-            <!-- end section content -->
-
-        </div>
-        <!-- end container -->
-
-    </section>
-    <!-- end section -->
-
-
-</main>
-<!-- end main -->
-
-
-<!-- start footer -->
-<footer id="site-footer">
-
-
-    <!-- start footer bottom -->
-    <section id="footer-bottom" class="section section-bg-1 dark" data-overlay="#202020" data-overlay-opacity="0.8" data-pattern="dot" data-pattern-opacity="0.9">
-
-        <!-- start container -->
-        <div class="container">
-
-            <!-- start row -->
-            <div class="row">
-
-                <address>
-                    <div class="col-24">
-                        <a href="https://goo.gl/maps/hxAK8"><span class="icon small"><img src="/public/img/location.png" alt="Tel" /></span> <span>Avenida 51 Nº1746 (Casi Esquina 30).</span><br><span style="margin-left:30px">La Plata, Bs As, Argentina</span></a><br>
-                    </div>
-                    <div class="col-24" style="">
-                        <a href="tel:+542214519943"><span class="icon small"><img src="/public/img/telephone.png" alt="Tel" /></span> (0221) 451-9943</a><br>
-                    </div>
-                    <div class="col-24" style="">
-                        <a href="mailto:celadalab@gmail.com"><span class="icon small"><img src="/public/img/email.png" alt="Email" /></span>celadalab@gmail.com</a>
-                    </div>
-                </address>
-
-            </div>
-            <!-- end row -->
-
-        </div>
-        <!-- end container -->
-
-    </section>
-    <!-- end footer bottom -->
-
-</footer>
-<!-- end footer -->
-
-<!-- place scripts at the end of body for better performance -->
-<script type="text/javascript" src="/public/src/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="/public/src/isotope/isotope.pkgd.min.js"></script>
-<script type="text/javascript" src="/public/src/bxslider/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="/public/src/hoverdir/jquery.hoverdir.min.js"></script>
-<script type="text/javascript" src="/public/src/slicknav/jquery.slicknav.min.js"></script>
-<script type="text/javascript" src="/public/src/appear/jquery.appear.js"></script>
-<script type="text/javascript" src="/public/src/countup/countUp.min.js"></script>
-<script type="text/javascript" src="/public/src/twitter/jquery.tweet.min.js"></script>
-<script type="text/javascript" src="/public/src/easypiechart/jquery.easypiechart.min.js"></script>
-<script type="text/javascript" src="/public/src/sticky/jquery.sticky.js"></script>
-<script type="text/javascript" src="/public/src/tooltipster/jquery.tooltipster.min.js"></script>
-<script type="text/javascript" src="/public/src/swipebox/jquery.swipebox.min.js"></script>
-
-<script type="text/javascript" src="/public/js/casanova.menu.js"></script>
-<script type="text/javascript" src="/public/js/casanova.accordion.js"></script>
-<script type="text/javascript" src="/public/js/casanova.tabs.js"></script>
-<script type="text/javascript" src="/public/js/casanova.fitmedia.js"></script>
-<script type="text/javascript" src="/public/js/casanova.min.js"></script>
-<script type="text/javascript" src="/public/js/init.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-54923911-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
+        });
+
+        const revealObserver = "IntersectionObserver" in window
+            ? new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" })
+            : null;
+
+        if (revealObserver) {
+            revealSections.forEach((section) => revealObserver.observe(section));
+        } else {
+            revealSections.forEach((section) => section.classList.add("is-visible"));
+        }
+
+        mobileMenu?.addEventListener("click", (event) => {
+            if (event.target.closest(".mobile-menu-panel a")) {
+                mobileMenu.open = false;
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && mobileMenu?.open) {
+                mobileMenu.open = false;
+            }
+        });
+
+        insuranceSearch?.addEventListener("input", () => {
+            const query = insuranceSearch.value.trim().toLocaleLowerCase("es-AR");
+            let visible = 0;
+
+            insuranceItems.forEach((item) => {
+                const matches = item.textContent.toLocaleLowerCase("es-AR").includes(query);
+                item.hidden = !matches;
+                if (matches) visible += 1;
+            });
+
+            if (!query) {
+                insuranceCount.textContent = "Mostrando todas las coberturas.";
+            } else if (visible === 1) {
+                insuranceCount.textContent = "Encontramos 1 cobertura.";
+            } else if (visible > 1) {
+                insuranceCount.textContent = `Encontramos ${visible} coberturas.`;
+            } else {
+                insuranceCount.textContent = "No aparece en la lista. Consulte al laboratorio para confirmar.";
+            }
+        });
+    </script>
 </body>
 </html>

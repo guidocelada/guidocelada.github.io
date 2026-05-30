@@ -56,10 +56,10 @@ a {
 
 .address-half {
     display: inline-block;
-    font-size: 0.72em;
+    font-size: 0.62em;
     font-weight: 700;
     line-height: 1;
-    transform: translateY(-0.08em);
+    transform: translateY(-0.16em);
 }
 
 :focus-visible {

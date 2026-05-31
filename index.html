@@ -22,9 +22,10 @@
     <meta name="twitter:image" content="https://laboratoriocelada.com.ar/public/assets/images/photos/3.jpg">
     <meta name="robots" content="index, follow">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/public/assets/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/assets/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/public/assets/images/photos/3.webp" as="image" type="image/webp">
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
     <link rel="stylesheet" href="/public/css/site.css">
 
@@ -363,7 +364,10 @@
                     <p>Servicio para pacientes que necesitan coordinar la extracción en domicilio. La disponibilidad se confirma por WhatsApp o teléfono.</p>
                     <a class="button primary" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20extraccion%20a%20domicilio">Consultar extracción a domicilio</a>
                 </div>
-                <img src="/public/assets/images/photos/6.png" alt="Frente del Laboratorio Celada" width="640" height="480" loading="lazy">
+                <picture>
+                    <source srcset="/public/assets/images/photos/6.webp" type="image/webp">
+                    <img src="/public/assets/images/photos/6.png" alt="Frente del Laboratorio Celada" width="640" height="480" loading="lazy">
+                </picture>
             </div>
 
             <div class="split-section reverse" id="resultados" aria-labelledby="results-title">
@@ -373,7 +377,10 @@
                     <p>Podés retirarlos impresos en el laboratorio de 10:00 a 13:00, recibirlos por email o consultarlos por WhatsApp.</p>
                     <a class="button outline" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20mis%20resultados">Consultar resultados</a>
                 </div>
-                <img src="/public/assets/images/photos/13.jpg" alt="Bioquímico trabajando con el sistema del laboratorio" width="640" height="480" loading="lazy">
+                <picture>
+                    <source srcset="/public/assets/images/photos/13.webp" type="image/webp">
+                    <img src="/public/assets/images/photos/13.jpg" alt="Bioquímico trabajando con el sistema del laboratorio" width="640" height="480" loading="lazy">
+                </picture>
             </div>
         </section>
 

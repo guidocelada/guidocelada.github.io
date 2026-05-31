@@ -467,7 +467,7 @@
         document.documentElement.classList.add("motion-ready");
 
         if (reviewList) {
-            const shuffledReviews = [...reviews].sort(() => Math.random() - 0.5).slice(0, 4);
+            const shuffledReviews = [...reviews].sort(() => Math.random() - 0.5).slice(0, 2);
             reviewList.innerHTML = shuffledReviews.map((review, index) => `
                 <figure${index === 0 ? ' class="featured-review"' : ""}>
                     <div class="quote-stars" aria-hidden="true">★★★★★</div>

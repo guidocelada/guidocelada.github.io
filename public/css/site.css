@@ -126,6 +126,7 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 0.65rem;
+    min-height: 48px;
     text-decoration: none;
 }
 
@@ -717,6 +718,7 @@ blockquote footer {
 
 .section-heading p,
 .split-section p,
+.legacy-page p,
 .faq p,
 .contact p {
     max-width: 42rem;
@@ -809,9 +811,19 @@ blockquote footer {
     background: var(--yellow-soft);
 }
 
+.studies,
 .preparation-list {
     display: grid;
     gap: 0.75rem;
+}
+
+.studies {
+    gap: 1.6rem;
+}
+
+.quick-logistics {
+    display: grid;
+    gap: 1.5rem;
 }
 
 .preparation-list details {
@@ -926,10 +938,8 @@ blockquote footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 0.55rem;
-    max-height: 23rem;
     margin: 0;
     padding: 0.25rem;
-    overflow: auto;
     list-style: none;
 }
 
@@ -950,8 +960,26 @@ blockquote footer {
     display: none;
 }
 
+.insurance-toggle {
+    justify-self: start;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+}
+
+.insurance-toggle:hover {
+    background: var(--yellow-soft);
+    border-color: rgb(220 169 0 / 55%);
+}
+
+.insurance-toggle[hidden] {
+    display: none;
+}
+
 .faq {
     display: grid;
+    gap: 0;
 }
 
 .faq details {
@@ -995,6 +1023,56 @@ blockquote footer {
 
 .faq p {
     margin-top: 0.6rem;
+}
+
+.legacy-page {
+    min-height: 100vh;
+    background: var(--paper);
+}
+
+.legacy-page .header-action {
+    display: inline-flex;
+}
+
+.legacy-main {
+    display: grid;
+    gap: 1.25rem;
+    width: var(--container);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.legacy-main h1 {
+    max-width: 13ch;
+}
+
+.legacy-main img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+
+.legacy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.legacy-list {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.legacy-list li {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: white;
+    font-weight: 700;
 }
 
 .contact {
@@ -1058,7 +1136,7 @@ blockquote footer {
     }
 
     .service-board {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         max-width: 980px;
     }
 
@@ -1104,6 +1182,16 @@ blockquote footer {
     .site-footer {
         grid-template-columns: minmax(0, 1fr) auto;
         padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 759px) {
+    .service-board .service-tile:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+    .review-list figure:nth-child(n + 3) {
+        display: none;
     }
 }
 

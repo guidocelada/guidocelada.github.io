@@ -25,9 +25,10 @@
     <link rel="preload" href="/public/assets/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/public/assets/fonts/lato-700-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/public/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/public/assets/images/photos/3.webp" as="image" type="image/webp">
+    <link rel="preload" href="/public/assets/images/photos/3-hero.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
-    <link rel="stylesheet" href="/public/css/site.css">
+    <link rel="preload" href="/public/css/site.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/public/css/site.css"></noscript>
 
     <script type="application/ld+json">
     {
@@ -130,7 +131,10 @@
 
     <main id="contenido">
         <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-media" aria-hidden="true"></div>
+            <picture class="hero-media" aria-hidden="true">
+                <source srcset="/public/assets/images/photos/3-hero.webp" type="image/webp">
+                <img src="/public/assets/images/photos/3.jpg" alt="" width="1280" height="960" fetchpriority="high" loading="eager" decoding="async">
+            </picture>
             <div class="hero-content">
                 <p class="badge">Desde hace más de 40 años</p>
                 <h1 id="hero-title">Tu laboratorio de confianza<br/>en La Plata</h1>
@@ -365,8 +369,8 @@
                     <a class="button primary" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20extraccion%20a%20domicilio">Consultar extracción a domicilio</a>
                 </div>
                 <picture>
-                    <source srcset="/public/assets/images/photos/6.webp" type="image/webp">
-                    <img src="/public/assets/images/photos/6.png" alt="Frente del Laboratorio Celada" width="640" height="480" loading="lazy">
+                    <source srcset="/public/assets/images/photos/6-360.webp 360w, /public/assets/images/photos/6-480.webp 480w, /public/assets/images/photos/6-720.webp 720w, /public/assets/images/photos/6.webp 960w" sizes="(min-width: 1100px) 560px, (min-width: 760px) 42vw, calc(100vw - 32px)" type="image/webp">
+                    <img src="/public/assets/images/photos/6.png" alt="Frente del Laboratorio Celada" width="360" height="480" loading="lazy" decoding="async">
                 </picture>
             </div>
 
@@ -378,8 +382,8 @@
                     <a class="button outline" href="https://wa.me/5492215400646?text=Hola%2C%20quiero%20consultar%20por%20mis%20resultados">Consultar resultados</a>
                 </div>
                 <picture>
-                    <source srcset="/public/assets/images/photos/13.webp" type="image/webp">
-                    <img src="/public/assets/images/photos/13.jpg" alt="Bioquímico trabajando con el sistema del laboratorio" width="640" height="480" loading="lazy">
+                    <source srcset="/public/assets/images/photos/13-360.webp 360w, /public/assets/images/photos/13-480.webp 480w, /public/assets/images/photos/13-720.webp 720w, /public/assets/images/photos/13.webp 1280w" sizes="(min-width: 1100px) 560px, (min-width: 760px) 42vw, calc(100vw - 32px)" type="image/webp">
+                    <img src="/public/assets/images/photos/13.jpg" alt="Bioquímico trabajando con el sistema del laboratorio" width="480" height="360" loading="lazy" decoding="async">
                 </picture>
             </div>
         </section>

@@ -40,6 +40,11 @@
     --font: "Lato", ui-sans-serif, system-ui, sans-serif;
     --display: "Figtree", ui-sans-serif, system-ui, sans-serif;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+    --motion-fast: 220ms;
+    --motion-menu: 240ms;
+    --motion-stagger: 420ms;
+    --motion-reveal: 640ms;
+    --motion-hero: 680ms;
 }
 
 * {
@@ -269,7 +274,7 @@ a {
 .insurance-list li,
 .preparation-list details,
 .faq details {
-    transition: background-color 180ms var(--ease-out-quint), color 180ms var(--ease-out-quint), border-color 180ms var(--ease-out-quint), transform 180ms var(--ease-out-quint), box-shadow 180ms var(--ease-out-quint);
+    transition: background-color var(--motion-fast) var(--ease-out-quint), color var(--motion-fast) var(--ease-out-quint), border-color var(--motion-fast) var(--ease-out-quint), transform var(--motion-fast) var(--ease-out-quint), box-shadow var(--motion-fast) var(--ease-out-quint);
 }
 
 .header-action {
@@ -363,7 +368,7 @@ a {
     background: white;
     box-shadow: 0 16px 36px rgb(0 0 0 / 14%);
     transform-origin: top right;
-    animation: menu-pop 180ms var(--ease-out-quint) both;
+    animation: menu-pop var(--motion-menu) var(--ease-out-quint) both;
 }
 
 .mobile-menu-panel a {
@@ -469,7 +474,7 @@ main [id] {
 }
 
 .hero-content > * {
-    animation: hero-rise 620ms var(--ease-out-quint, cubic-bezier(0.22, 1, 0.36, 1)) both;
+    animation: hero-rise var(--motion-hero) var(--ease-out-quint, cubic-bezier(0.22, 1, 0.36, 1)) both;
 }
 
 .hero-content > :nth-child(2) {
@@ -617,7 +622,7 @@ h2 {
     border-radius: 14px;
     background: var(--line);
     box-shadow: var(--shadow);
-    animation: board-rise 520ms cubic-bezier(0.22, 1, 0.36, 1) 240ms both;
+    animation: board-rise var(--motion-reveal) var(--ease-out-quint) 240ms both;
     margin-bottom: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -1053,8 +1058,8 @@ blockquote footer {
 
 .motion-ready [data-reveal] {
     opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 520ms var(--ease-out-quint), transform 520ms var(--ease-out-quint);
+    transform: translateY(12px);
+    transition: opacity var(--motion-reveal) var(--ease-out-quint), transform var(--motion-reveal) var(--ease-out-quint);
 }
 
 .motion-ready [data-reveal].is-visible {
@@ -1064,9 +1069,9 @@ blockquote footer {
 
 .motion-ready [data-stagger-item] {
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 360ms var(--ease-out-quint), transform 360ms var(--ease-out-quint), background-color 180ms var(--ease-out-quint), border-color 180ms var(--ease-out-quint);
-    transition-delay: calc(var(--i, 0) * 38ms);
+    transform: translateY(6px);
+    transition: opacity var(--motion-stagger) var(--ease-out-quint), transform var(--motion-stagger) var(--ease-out-quint), background-color var(--motion-fast) var(--ease-out-quint), border-color var(--motion-fast) var(--ease-out-quint);
+    transition-delay: calc(var(--i, 0) * 32ms);
 }
 
 .motion-ready .is-visible [data-stagger-item],
@@ -1308,7 +1313,7 @@ blockquote footer {
 @keyframes hero-rise {
     from {
         opacity: 0;
-        transform: translateY(14px);
+        transform: translateY(10px);
     }
 
     to {
@@ -1320,7 +1325,7 @@ blockquote footer {
 @keyframes board-rise {
     from {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translateY(12px);
     }
 
     to {
@@ -1332,7 +1337,7 @@ blockquote footer {
 @keyframes menu-pop {
     from {
         opacity: 0;
-        transform: translateY(-6px) scale(0.98);
+        transform: translateY(-4px) scale(0.985);
     }
 
     to {

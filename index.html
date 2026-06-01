@@ -27,7 +27,55 @@
     <link rel="preload" href="/public/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/public/assets/images/photos/3-hero.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
-    <link rel="preload" href="/public/css/site.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script>document.documentElement.classList.add("css-loading");</script>
+    <style>
+        .css-loading body {
+            margin: 0;
+            min-height: 100vh;
+            background: #f7f7f5;
+            color: #171717;
+            font-family: ui-sans-serif, system-ui, sans-serif;
+        }
+
+        .css-loading body > :not(.css-loader) {
+            display: none !important;
+        }
+
+        .css-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 2147483647;
+            display: grid;
+            place-items: center;
+            background: #f7f7f5;
+        }
+
+        html:not(.css-loading) .css-loader {
+            display: none;
+        }
+
+        .css-loader__mark {
+            width: 3.5rem;
+            height: 3.5rem;
+            border: 0.55rem solid #f6c400;
+            border-right-color: #777;
+            border-radius: 50%;
+            animation: css-loader-spin 850ms linear infinite;
+        }
+
+        @keyframes css-loader-spin {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .css-loader__mark {
+                animation: none;
+            }
+        }
+    </style>
+    <link rel="preload" href="/public/css/site.css" as="style" onload="this.onload=null;this.rel='stylesheet';document.documentElement.classList.remove('css-loading')" onerror="document.documentElement.classList.remove('css-loading')">
     <noscript><link rel="stylesheet" href="/public/css/site.css"></noscript>
 
     <script type="application/ld+json">
@@ -76,6 +124,10 @@
     </script>
 </head>
 <body>
+    <div class="css-loader" role="status" aria-label="Cargando sitio">
+        <span class="css-loader__mark" aria-hidden="true"></span>
+    </div>
+
     <svg class="svg-sprite" aria-hidden="true">
         <symbol id="icon-vial" viewBox="0 0 24 24"><path d="M9 3h6v2l-1.6 1.6V19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V6.6L7 5V3h2Zm.5 7h4"/></symbol>
         <symbol id="icon-drop-sample" viewBox="0 0 24 24"><path d="M12 3.5s5 5.3 5 9a5 5 0 0 1-10 0c0-3.7 5-9 5-9Z"/><path d="M8 21h8"/></symbol>
